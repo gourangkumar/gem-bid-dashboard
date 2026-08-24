@@ -341,7 +341,7 @@
     return `${y}-${m}-${d}`;
   }
 
-  let currentDate = qsDate || istDateStr(0);
+  let currentDate = qsDate || istDateStr(-1);
 
   const tbodyEl = document.getElementById('tableBody');
   const theadRow = document.getElementById('theadRow');
@@ -370,7 +370,7 @@
 
   // ================= loading =================
   function tryLoadJSON(url){
-    return fetch(url, {cache:'no-store'}).then(res=>{
+    return fetch(url + `?v=${Date.now()}`, {cache:'no-store'}).then(res=>{
       if(!res.ok) throw new Error(`HTTP ${res.status}`);
       return res.json();
     });
@@ -380,18 +380,41 @@
     showStatus(`Loading bids for ${dateStr}…`, false);
     currentDate = dateStr;
     updateDateChips();
-    const candidates = [`bids_${dateStr}.json`, `bids-${dateStr}.json`, `bids.json`];
+
+    const candidates = [
+      `bids_${dateStr}.json`,
+      `bids-${dateStr}.json`,
+      `bids.json`
+    ];
+
     (async ()=>{
+      const errors = [];
+
       for(const url of candidates){
         try{
           const payload = await tryLoadJSON(url);
+
+          // If bids.json is used as fallback, use the date actually
+          // stored inside the JSON payload.
+          if(payload && payload.sheet_tab){
+            currentDate = payload.sheet_tab;
+          }
+
           onPayload(payload);
+          updateDateChips();
           return;
-        }catch(e){ /* try next candidate */ }
+        }catch(e){
+          errors.push(`${url}: ${e.message || e}`);
+        }
       }
+
       showStatus(
-        `Couldn't find a bids JSON file for ${dateStr}. Expected one of: ${candidates.join(', ')} ` +
-        `in the same folder as this dashboard — or use "Load JSON file…" to pick one manually.`, true);
+        `Couldn\'t load bid data for ${dateStr}. ` +
+        `Tried: ${candidates.join(', ')}. ` +
+        `Make sure the JSON file is committed to the same GitHub Pages folder as index.html. ` +
+        `Details: ${errors.join(' | ')}`,
+        true
+      );
     })();
   }
 
