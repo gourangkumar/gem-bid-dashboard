@@ -8,410 +8,218 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F3F5F8;
-    --surface:#FFFFFF;
-    --surface-2:#FAFBFC;
-    --ink:#131C31;
-    --ink-soft:#33415A;
-    --muted:#6B7686;
-    --line:#E4E8EE;
-    --line-strong:#CBD2DC;
+    --bg:#F3F5F8; --surface:#FFFFFF; --surface-2:#FAFBFC;
+    --ink:#131C31; --ink-soft:#33415A; --muted:#6B7686;
+    --line:#E4E8EE; --line-strong:#CBD2DC;
 
-    --go:#0E7C6B;
-    --go-bg:#E4F5F1;
-    --go-line:#B6E3D8;
+    --go:#0E7C6B; --go-bg:#E4F5F1; --go-line:#B6E3D8;
+    --review:#B4790F; --review-bg:#FCF1DD; --review-line:#F0D89E;
+    --issue:#B33A3A; --issue-bg:#FBE9E7; --issue-line:#EFC0BB;
+    --closed:#8992A1; --closed-bg:#EEF0F3; --closed-line:#DADFE5;
+    --blue:#1D4E89; --blue-bg:#E7EEF6; --blue-line:#C4D6EB;
+    --accent:#1D4E89; --accent-soft:#E7EEF6;
 
-    --review:#B4790F;
-    --review-bg:#FCF1DD;
-    --review-line:#F0D89E;
-
-    --issue:#B33A3A;
-    --issue-bg:#FBE9E7;
-    --issue-line:#EFC0BB;
-
-    --closed:#8992A1;
-    --closed-bg:#EEF0F3;
-    --closed-line:#DADFE5;
-
-    --accent:#1D4E89;
-    --accent-soft:#E7EEF6;
+    /* status colors */
+    --st-qualified:#0E7C6B; --st-qualified-bg:#E4F5F1; --st-qualified-line:#B6E3D8;
+    --st-seg1:#B4790F; --st-seg1-bg:#FCF1DD; --st-seg1-line:#F0D89E;
+    --st-seg2:#9A6B12; --st-seg2-bg:#FBEBD6; --st-seg2-line:#EEC98E;
+    --st-disq:#B33A3A; --st-disq-bg:#FBE9E7; --st-disq-line:#EFC0BB;
+    --st-review:#3457A6; --st-review-bg:#E9EEFA; --st-review-line:#C3D0F0;
 
     --radius:10px;
     --shadow: 0 1px 2px rgba(19,28,49,0.04), 0 6px 20px -8px rgba(19,28,49,0.10);
     font-size:16px;
   }
-
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
-  body{
-    background:var(--bg);
-    color:var(--ink);
-    font-family:'IBM Plex Sans', sans-serif;
-    -webkit-font-smoothing:antialiased;
-    min-height:100vh;
-  }
+  body{background:var(--bg); color:var(--ink); font-family:'IBM Plex Sans', sans-serif; -webkit-font-smoothing:antialiased; min-height:100vh;}
   .mono{font-family:'IBM Plex Mono', monospace;}
   h1,h2,h3,.display{font-family:'Space Grotesk', sans-serif;}
-
   a{color:var(--accent);}
+  button{font-family:inherit;}
 
   /* ---------- Header ---------- */
   header.top{
-    background:linear-gradient(180deg, #101B30 0%, #16233D 100%);
-    color:#fff;
-    padding:26px 32px 22px;
-    position:relative;
-    overflow:hidden;
+    background:linear-gradient(180deg, #101B30 0%, #16233D 100%); color:#fff;
+    padding:22px 32px 18px; position:relative; overflow:hidden;
   }
   header.top::after{
-    content:"";
-    position:absolute; right:-40px; top:-60px;
-    width:280px; height:280px;
-    background: radial-gradient(circle at center, rgba(29,78,137,0.55), transparent 70%);
-    pointer-events:none;
+    content:""; position:absolute; right:-40px; top:-60px; width:280px; height:280px;
+    background: radial-gradient(circle at center, rgba(29,78,137,0.55), transparent 70%); pointer-events:none;
   }
-  .top-inner{
-    display:flex; align-items:flex-start; justify-content:space-between;
-    gap:24px; position:relative; z-index:1; flex-wrap:wrap;
-  }
+  .top-inner{display:flex; align-items:flex-start; justify-content:space-between; gap:24px; position:relative; z-index:1; flex-wrap:wrap;}
   .brand{display:flex; align-items:center; gap:16px;}
   .gate-mark{display:flex; gap:5px; align-items:flex-end;}
-  .gate-mark span{
-    display:block; width:9px; border-radius:2px;
-    background:var(--go);
-  }
-  .gate-mark span:nth-child(1){height:26px; background:var(--go);}
-  .gate-mark span:nth-child(2){height:38px; background:var(--review);}
-  .gate-mark span:nth-child(3){height:20px; background:var(--issue);}
-  .brand h1{font-size:22px; font-weight:700; margin:0; letter-spacing:0.2px;}
-  .brand .tag{font-size:12.5px; color:#9FB0CB; margin-top:3px; font-family:'IBM Plex Mono',monospace;}
-  .meta{
-    text-align:right; font-size:12.5px; color:#9FB0CB;
-    font-family:'IBM Plex Mono', monospace; line-height:1.7;
-  }
+  .gate-mark span{display:block; width:9px; border-radius:2px; background:var(--go);}
+  .gate-mark span:nth-child(1){height:26px; background:var(--st-qualified);}
+  .gate-mark span:nth-child(2){height:38px; background:var(--st-seg1);}
+  .gate-mark span:nth-child(3){height:20px; background:var(--st-disq);}
+  .brand h1{font-size:21px; font-weight:700; margin:0; letter-spacing:.2px;}
+  .brand .tag{font-size:12px; color:#9FB0CB; margin-top:3px; font-family:'IBM Plex Mono',monospace;}
+  .meta{text-align:right; font-size:12px; color:#9FB0CB; font-family:'IBM Plex Mono', monospace; line-height:1.7;}
   .meta b{color:#EAF0FA; font-weight:600;}
+  .date-bar{display:flex; gap:8px; align-items:center; margin-top:12px; flex-wrap:wrap;}
+  .date-bar .dchip{
+    padding:6px 12px; border-radius:16px; border:1px solid rgba(255,255,255,.22); background:rgba(255,255,255,.06);
+    color:#DDE6F5; font-size:12px; cursor:pointer; user-select:none;
+  }
+  .date-bar .dchip.on{background:#fff; color:#101B30; border-color:#fff; font-weight:600;}
+  .date-bar input[type=date]{
+    padding:6px 10px; border-radius:8px; border:1px solid rgba(255,255,255,.28); background:rgba(255,255,255,.06);
+    color:#EAF0FA; font-size:12px; font-family:'IBM Plex Mono',monospace;
+  }
+  .date-bar .loadbtn{
+    padding:6px 12px; border-radius:8px; border:1px solid rgba(255,255,255,.3); background:transparent; color:#EAF0FA;
+    font-size:12px; cursor:pointer;
+  }
+  .date-bar .loadbtn:hover{background:rgba(255,255,255,.1);}
+  #jsonFileInput{display:none;}
 
   /* ---------- KPI Strip ---------- */
-  .kpi-strip{
-    display:grid; grid-template-columns:repeat(6, 1fr); gap:10px;
-    padding:18px 32px 0; margin-top:-10px; position:relative; z-index:2;
-  }
-  .kpi{
-    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
-    padding:14px 16px; box-shadow:var(--shadow); cursor:pointer;
-    transition:transform .12s ease, border-color .12s ease;
-    position:relative;
-  }
+  .kpi-strip{display:grid; grid-template-columns:repeat(6, 1fr); gap:10px; padding:18px 32px 0; margin-top:-10px; position:relative; z-index:2;}
+  .kpi{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:13px 15px; box-shadow:var(--shadow); cursor:pointer; transition:transform .12s ease, border-color .12s ease; position:relative;}
   .kpi:hover{transform:translateY(-2px); border-color:var(--line-strong);}
   .kpi.active{border-color:var(--accent); box-shadow:0 0 0 2px var(--accent-soft), var(--shadow);}
-  .kpi .val{font-family:'Space Grotesk',sans-serif; font-size:26px; font-weight:700; line-height:1;}
-  .kpi .lbl{font-size:11.5px; color:var(--muted); margin-top:6px; font-weight:500; letter-spacing:.2px;}
+  .kpi .val{font-family:'Space Grotesk',sans-serif; font-size:24px; font-weight:700; line-height:1;}
+  .kpi .lbl{font-size:11px; color:var(--muted); margin-top:6px; font-weight:500; letter-spacing:.2px;}
   .kpi .bar{position:absolute; left:0; bottom:0; height:3px; width:100%; border-radius:0 0 var(--radius) var(--radius);}
 
   /* ---------- Controls ---------- */
-  .controls{
-    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
-    padding:18px 32px 0;
-  }
-  .search-wrap{
-    position:relative; flex:1 1 260px; min-width:220px;
-  }
-  .search-wrap input{
-    width:100%; padding:10px 14px 10px 36px; border-radius:8px; border:1px solid var(--line-strong);
-    font-family:'IBM Plex Sans'; font-size:13.5px; background:var(--surface); color:var(--ink);
-  }
+  .controls{display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:16px 32px 0;}
+  .search-wrap{position:relative; flex:1 1 240px; min-width:200px;}
+  .search-wrap input{width:100%; padding:9px 12px 9px 34px; border-radius:8px; border:1px solid var(--line-strong); font-family:'IBM Plex Sans'; font-size:13px; background:var(--surface); color:var(--ink);}
   .search-wrap input:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft);}
   .search-wrap svg{position:absolute; left:11px; top:50%; transform:translateY(-50%); opacity:.45;}
-
-  select{
-    padding:10px 12px; border-radius:8px; border:1px solid var(--line-strong);
-    background:var(--surface); font-family:'IBM Plex Sans'; font-size:13.5px; color:var(--ink-soft);
-    cursor:pointer;
-  }
+  select{padding:9px 10px; border-radius:8px; border:1px solid var(--line-strong); background:var(--surface); font-family:'IBM Plex Sans'; font-size:12.5px; color:var(--ink-soft); cursor:pointer;}
   select:focus{outline:none; border-color:var(--accent);}
-
-  .chip{
-    padding:8px 13px; border-radius:20px; border:1px solid var(--line-strong);
-    font-size:12.5px; font-weight:500; color:var(--ink-soft); background:var(--surface);
-    cursor:pointer; white-space:nowrap; transition:all .12s ease; user-select:none;
-  }
-  .chip:hover{border-color:var(--line-strong); background:var(--surface-2);}
-  .chip.on{
-    background:var(--accent); border-color:var(--accent); color:#fff;
-  }
-  .chip-group{display:flex; gap:7px; flex-wrap:wrap;}
-
-  .toggle-pill{
-    display:flex; align-items:center; gap:7px; padding:9px 13px; border-radius:20px;
-    border:1px solid var(--line-strong); background:var(--surface); font-size:12.5px; cursor:pointer;
-    color:var(--ink-soft); user-select:none;
-  }
+  .chip{padding:7px 12px; border-radius:20px; border:1px solid var(--line-strong); font-size:12px; font-weight:500; color:var(--ink-soft); background:var(--surface); cursor:pointer; white-space:nowrap; transition:all .12s ease; user-select:none;}
+  .chip:hover{background:var(--surface-2);}
+  .chip.on{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .chip-group{display:flex; gap:6px; flex-wrap:wrap;}
+  .toggle-pill{display:flex; align-items:center; gap:6px; padding:8px 12px; border-radius:20px; border:1px solid var(--line-strong); background:var(--surface); font-size:12px; cursor:pointer; color:var(--ink-soft); user-select:none;}
   .toggle-pill input{accent-color:var(--accent);}
-
   .right-controls{margin-left:auto; display:flex; gap:10px; align-items:center;}
-
-  /* ---------- Insights ---------- */
-  .insights{
-    display:grid; grid-template-columns: 1.1fr 1.4fr; gap:14px;
-    padding:16px 32px 0;
-  }
-  .panel{
-    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
-    padding:16px 18px; box-shadow:var(--shadow);
-  }
-  .panel h3{font-size:13px; margin:0 0 10px; color:var(--ink-soft); font-weight:600; letter-spacing:.2px;
-    display:flex; align-items:center; justify-content:space-between;}
-  .panel h3 .n{font-family:'IBM Plex Mono'; font-weight:400; color:var(--muted); font-size:11.5px;}
+  .filters-row2{display:flex; gap:8px; flex-wrap:wrap; padding:10px 32px 0;}
 
   /* ---------- Table ---------- */
-  .table-wrap{
-    margin:16px 32px 40px; background:var(--surface); border:1px solid var(--line);
-    border-radius:var(--radius); box-shadow:var(--shadow); overflow:visible;
-  }
-  .table-scroll{overflow-x:auto; overflow-y:clip;}
-  table{border-collapse:collapse; width:100%; min-width:1360px; table-layout:fixed;}
-  /* Fixed column widths so long content (title, eligibility) wraps instead of stretching the table */
-  col.col-gate{width:64px;}
-  col.col-bidno{width:130px;}
-  col.col-title{width:230px;}
-  col.col-dept{width:130px;}
-  col.col-value{width:110px;}
-  col.col-days{width:78px;}
-  col.col-turnover{width:92px;}
-  col.col-reseller{width:92px;}
-  col.col-child{width:92px;}
-  col.col-elig{width:220px;}
-  col.col-rec{width:180px;}
+  .table-wrap{margin:16px 32px 40px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden;}
+  table{width:100%; border-collapse:collapse; font-size:12.5px;}
   thead th{
-    position:sticky; top:0; background:var(--surface-2); z-index:20;
-    box-shadow:0 1px 0 var(--line);
-    text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.5px;
-    color:var(--muted); font-weight:600; padding:12px 14px; border-bottom:1px solid var(--line);
-    cursor:pointer; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    position:sticky; top:0; background:var(--surface-2); text-align:left; padding:10px 12px;
+    font-size:10.5px; text-transform:uppercase; letter-spacing:.4px; color:var(--muted); font-weight:600;
+    border-bottom:1px solid var(--line); white-space:nowrap; cursor:pointer;
   }
   thead th:hover{color:var(--ink-soft);}
-  thead th .arrow{font-size:9px; margin-left:3px; opacity:.5;}
-  tbody td{
-    padding:11px 14px; border-bottom:1px solid var(--line); font-size:13px; vertical-align:top;
-    color:var(--ink-soft);
-  }
+  tbody td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:middle;}
   tbody tr{cursor:pointer; transition:background .1s ease;}
   tbody tr:hover{background:var(--surface-2);}
-  tbody tr:last-child td{border-bottom:none;}
+  .empty-row td{text-align:center; padding:40px; color:var(--muted);}
 
-  .bidno{font-family:'IBM Plex Mono'; font-size:12px; color:var(--ink); font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
-  .title-cell{overflow:hidden;}
-  .eligibility-cell{white-space:normal; line-height:1.45; word-break:normal; overflow-wrap:anywhere;}
-  .eligibility-cell .elig-item{display:inline;}
-  .title-cell .t{color:var(--ink); font-weight:500; font-size:13px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
-  .dept-cell{font-size:12px; overflow:hidden; word-break:break-word; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+  .status-badge{display:inline-flex; align-items:center; gap:6px; padding:4px 10px; border-radius:20px; font-size:11px; font-weight:600; white-space:nowrap; border:1px solid transparent;}
+  .status-badge .dot{width:6px; height:6px; border-radius:50%; display:inline-block;}
+  .status-Qualified{background:var(--st-qualified-bg); color:var(--st-qualified); border-color:var(--st-qualified-line);}
+  .status-Qualified .dot{background:var(--st-qualified);}
+  .status-SegmentOne{background:var(--st-seg1-bg); color:var(--st-seg1); border-color:var(--st-seg1-line);}
+  .status-SegmentOne .dot{background:var(--st-seg1);}
+  .status-SegmentTwo{background:var(--st-seg2-bg); color:var(--st-seg2); border-color:var(--st-seg2-line);}
+  .status-SegmentTwo .dot{background:var(--st-seg2);}
+  .status-Disqualified{background:var(--st-disq-bg); color:var(--st-disq); border-color:var(--st-disq-line);}
+  .status-Disqualified .dot{background:var(--st-disq);}
+  .status-PendingHumanReview{background:var(--st-review-bg); color:var(--st-review); border-color:var(--st-review-line);}
+  .status-PendingHumanReview .dot{background:var(--st-review);}
 
-  /* Eligibility Checks cell: clamp to a few lines with an inline "Read more / Read less" toggle */
-  .elig-wrap{
-    display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;
-    overflow:hidden;
-  }
-  .elig-wrap.expanded{display:block; -webkit-line-clamp:unset;}
-  .elig-toggle{
-    display:inline-block; margin-top:4px; color:var(--accent); font-size:11px;
-    font-weight:600; cursor:pointer; user-select:none;
-  }
-  .elig-toggle:hover{text-decoration:underline;}
-  .type-badge{
-    font-size:10.5px; font-weight:600; padding:2px 7px; border-radius:4px;
-    background:var(--accent-soft); color:var(--accent); font-family:'IBM Plex Mono';
-  }
-  .days-cell{font-family:'IBM Plex Mono'; font-size:12.5px;}
-  .days-cell.urgent{color:var(--issue); font-weight:600;}
-  .days-cell.soon{color:var(--review); font-weight:600;}
-  .days-cell.past{color:var(--closed);}
+  .score-bar-wrap{width:70px; height:6px; background:var(--line); border-radius:4px; overflow:hidden; display:inline-block; vertical-align:middle; margin-right:6px;}
+  .score-bar{height:100%; border-radius:4px;}
+  .score-num{font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600;}
 
-  .gate{display:flex; gap:3px; margin-bottom:5px;}
-  .gate span{width:16px; height:6px; border-radius:2px; background:var(--line-strong);}
-  .gate span.g{background:var(--go);}
-  .gate span.r{background:var(--review);}
-  .gate span.x{background:var(--issue);}
-
-  .rec-badge{
-    display:inline-flex; align-items:center; gap:5px; font-size:11px; font-weight:600;
-    padding:4px 9px; border-radius:6px; white-space:nowrap;
-  }
-  .rec-badge.go{background:var(--go-bg); color:var(--go); border:1px solid var(--go-line);}
-  .rec-badge.review{background:var(--review-bg); color:var(--review); border:1px solid var(--review-line);}
-  .rec-badge.issues{background:var(--issue-bg); color:var(--issue); border:1px solid var(--issue-line);}
-
-  .empty-row td{text-align:center; padding:50px 20px; color:var(--muted); font-size:13.5px;}
-
-  .table-footer{
-    display:flex; align-items:center; justify-content:space-between;
-    padding:10px 16px; font-size:12px; color:var(--muted); border-top:1px solid var(--line);
-    background:var(--surface-2);
-  }
+  .conf-pill{font-family:'IBM Plex Mono',monospace; font-size:11px; padding:2px 7px; border-radius:10px; background:var(--surface-2); border:1px solid var(--line);}
+  .days-pill{font-family:'IBM Plex Mono',monospace; font-size:11.5px; padding:3px 8px; border-radius:6px;}
+  .days-urgent{background:var(--st-disq-bg); color:var(--st-disq);}
+  .days-soon{background:var(--st-seg1-bg); color:var(--st-seg1);}
+  .days-ok{background:var(--surface-2); color:var(--muted);}
+  .flag-icon{display:inline-block; width:16px; text-align:center;}
+  .section-pill{font-size:10.5px; padding:2px 8px; border-radius:10px; background:var(--blue-bg); color:var(--blue); border:1px solid var(--blue-line);}
+  .docs-pill{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--muted);}
+  .blocking-flag{color:var(--st-disq); font-size:11px; font-weight:600;}
+  .review-flag{color:var(--st-review); font-size:11px; font-weight:600;}
 
   /* ---------- Drawer ---------- */
-  .scrim{
-    position:fixed; inset:0; background:rgba(15,21,35,0.45); opacity:0; pointer-events:none;
-    transition:opacity .18s ease; z-index:1000;
-  }
-  .scrim.on{opacity:1; pointer-events:auto;}
-  .drawer{
-    position:fixed; top:0; right:0; height:100%; width:480px; max-width:92vw;
-    background:var(--surface); z-index:1001; box-shadow:-16px 0 40px rgba(15,21,35,0.18);
-    transform:translateX(100%); transition:transform .22s ease;
-    display:flex; flex-direction:column;
-  }
-  .drawer.on{transform:translateX(0);}
-  .drawer-head{
-    padding:20px 22px 16px; border-bottom:1px solid var(--line); position:relative;
-    background:var(--surface-2);
-  }
-  .drawer-close{
-    position:absolute; right:16px; top:16px; width:30px; height:30px; border-radius:8px;
-    border:1px solid var(--line-strong); background:var(--surface); cursor:pointer;
-    display:flex; align-items:center; justify-content:center; color:var(--ink-soft);
-  }
-  .drawer-close:hover{background:var(--surface-2);}
-  .drawer-head .bidno{font-size:13px;}
-  .drawer-head h2{font-size:16px; margin:8px 0 4px; line-height:1.35; font-family:'IBM Plex Sans'; font-weight:600;}
-  .drawer-head .dept-line{font-size:12px; color:var(--muted);}
-  .drawer-body{padding:18px 22px 30px; overflow-y:auto; flex:1;}
-  .dsec{margin-bottom:20px;}
-  .dsec h4{
-    font-size:11px; text-transform:uppercase; letter-spacing:.5px; color:var(--muted);
-    margin:0 0 10px; font-weight:600;
-  }
+  .overlay{position:fixed; inset:0; background:rgba(15,20,32,.45); backdrop-filter:blur(1px); z-index:50; display:none;}
+  .overlay.show{display:block;}
+  .drawer{position:fixed; top:0; right:0; height:100vh; width:min(920px, 96vw); background:var(--bg); z-index:60; box-shadow:-12px 0 40px rgba(0,0,0,.25); transform:translateX(100%); transition:transform .22s ease; display:flex; flex-direction:column;}
+  .drawer.show{transform:translateX(0);}
+  .drawer-head{background:linear-gradient(180deg,#101B30,#16233D); color:#fff; padding:18px 24px; position:relative; flex:0 0 auto;}
+  .drawer-head .closeBtn{position:absolute; top:16px; right:18px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.2); color:#fff; width:30px; height:30px; border-radius:8px; cursor:pointer; font-size:16px;}
+  .drawer-body{overflow-y:auto; padding:20px 24px 60px; flex:1 1 auto;}
+  .drawer h2{font-size:18px; margin:0 0 4px;}
+  .drawer .subtitle{font-size:12.5px; color:#B9C6DE; font-family:'IBM Plex Mono',monospace;}
+
+  .dsection{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin-bottom:14px; box-shadow:var(--shadow);}
+  .dsection h3{font-size:12.5px; margin:0 0 12px; color:var(--ink-soft); font-weight:600; letter-spacing:.3px; text-transform:uppercase; display:flex; align-items:center; gap:8px;}
   .dgrid{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
   .dfield{background:var(--surface-2); border:1px solid var(--line); border-radius:8px; padding:9px 11px;}
-  .dfield .k{font-size:10.5px; color:var(--muted); margin-bottom:3px;}
-  .dfield .v{font-size:12.5px; color:var(--ink); font-weight:500; line-height:1.4; word-break:break-word;}
+  .dfield .k{font-size:10.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.3px; margin-bottom:3px;}
+  .dfield .v{font-size:13px; font-weight:600; color:var(--ink);}
 
-  .elig-source{
-    font-size:10.5px;
-    color:var(--muted);
-    margin:-4px 0 10px;
-    font-family:'IBM Plex Mono',monospace;
-  }
-  .elig-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:8px;
-  }
-  .elig-field{
-    background:var(--surface-2);
-    border:1px solid var(--line);
-    border-radius:8px;
-    padding:9px 11px;
-  }
-  .elig-field .k{
-    font-size:10.5px;
-    color:var(--muted);
-    margin-bottom:4px;
-    font-weight:600;
-  }
-  .elig-field .v{
-    font-size:12.5px;
-    color:var(--ink);
-    font-weight:500;
-    line-height:1.5;
-    white-space:pre-wrap;
-    word-break:break-word;
-  }
-  .raw-elig{
-    margin-top:10px;
-  }
-  .raw-elig summary{
-    cursor:pointer;
-    color:var(--accent);
-    font-size:11.5px;
-    font-weight:600;
-  }
-  .raw-elig pre{
-    white-space:pre-wrap;
-    word-break:break-word;
-    font-family:'IBM Plex Sans',sans-serif;
-    font-size:11.5px;
-    line-height:1.5;
-    color:var(--ink-soft);
-    background:var(--surface-2);
-    border:1px solid var(--line);
-    border-radius:8px;
-    padding:10px;
-    margin:8px 0 0;
-  }
-  @media (max-width:640px){
-    .drawer{width:100%;max-width:100vw;}
-  }
-  .dnote{
-    background:var(--surface-2); border:1px solid var(--line); border-radius:8px; padding:11px 12px;
-    font-size:12.5px; line-height:1.55; color:var(--ink-soft);
-  }
-  .rec-callout{
-    border-radius:10px; padding:12px 14px; font-size:13px; font-weight:600; display:flex; gap:8px; align-items:center;
-  }
-  .btn-link{
-    display:inline-flex; align-items:center; gap:6px; margin-top:14px; padding:10px 14px;
-    background:var(--ink); color:#fff; text-decoration:none; border-radius:8px; font-size:12.5px; font-weight:500;
-  }
-  .btn-link:hover{background:#0A1524;}
+  .recommend-box{border-radius:10px; padding:14px 16px; border:1px solid; margin-bottom:6px;}
+  .recommend-box .rtitle{font-size:14px; font-weight:700; margin-bottom:4px;}
+  .recommend-box .rreason{font-size:12.5px; line-height:1.5;}
 
-  ::-webkit-scrollbar{width:9px; height:9px;}
-  ::-webkit-scrollbar-thumb{background:var(--line-strong); border-radius:6px;}
-  ::-webkit-scrollbar-track{background:transparent;}
+  /* requirement rows */
+  .req-row{display:grid; grid-template-columns:20px 1.6fr 1fr 1.3fr; gap:10px; align-items:start; padding:10px 8px; border-bottom:1px solid var(--line); font-size:12.5px;}
+  .req-row:last-child{border-bottom:none;}
+  .req-dot{width:11px; height:11px; border-radius:50%; margin-top:3px;}
+  .req-dot.green{background:var(--go);} .req-dot.red{background:var(--issue);} .req-dot.amber{background:var(--review);}
+  .req-dot.grey{background:var(--closed);} .req-dot.blue{background:var(--blue);}
+  .req-name{font-weight:600;}
+  .req-cat{font-size:10.5px; color:var(--muted); text-transform:uppercase; margin-top:2px;}
+  .req-status-chip{display:inline-block; padding:2px 9px; border-radius:10px; font-size:10.5px; font-weight:600;}
+  .req-status-chip.green{background:var(--go-bg); color:var(--go);}
+  .req-status-chip.red{background:var(--issue-bg); color:var(--issue);}
+  .req-status-chip.amber{background:var(--review-bg); color:var(--review);}
+  .req-status-chip.grey{background:var(--closed-bg); color:var(--closed);}
+  .req-status-chip.blue{background:var(--blue-bg); color:var(--blue);}
+  .req-mand{font-size:10px; color:var(--issue); font-weight:700; margin-left:6px;}
+  .req-evidence{font-size:11.5px; color:var(--ink-soft); background:var(--surface-2); border-radius:6px; padding:6px 8px; border:1px solid var(--line);}
+  .req-notes{font-size:11px; color:var(--muted); margin-top:4px; font-style:italic;}
 
+  .legend{display:flex; gap:14px; flex-wrap:wrap; font-size:11px; color:var(--muted); margin-bottom:10px;}
+  .legend span{display:inline-flex; align-items:center; gap:5px;}
+  .legend .dot{width:9px; height:9px; border-radius:50%;}
 
-  /* ---------- Fixed dashboard + table header ---------- */
-  /* The four visible bands stack naturally and stay pinned during page scroll. */
-  header.top{
-    position:sticky;
-    top:0;
-    z-index:100;
-  }
-  .kpi-strip{
-    position:sticky;
-    top:var(--top-h, 0px);
-    z-index:90;
-    background:var(--bg);
-    padding-bottom:0;
-  }
-  .controls{
-    position:sticky;
-    top:var(--kpi-top, 0px);
-    z-index:80;
-    background:var(--bg);
-    padding-bottom:18px;
-  }
-  .table-wrap{
-    position:relative;
-    overflow:visible;
-  }
-  /* Keep horizontal scrolling, but let the page own vertical scrolling so the
-     table header can stick to the viewport reliably. */
-  .table-scroll{overflow:visible;}
-  thead th{
-    position:sticky;
-    top:var(--table-head-top, 0px);
-    z-index:70;
-    background:var(--surface-2);
-  }
-  th[data-key="eligibility_summary"], td.eligibility-checks-cell{
-    width:210px; min-width:210px; max-width:210px;
-  }
-  td.eligibility-checks-cell{white-space:normal; overflow-wrap:anywhere; word-break:break-word;}
+  .child-doc{border:1px solid var(--line); border-radius:8px; margin-bottom:8px; overflow:hidden;}
+  .child-doc summary{padding:10px 12px; cursor:pointer; font-size:12.5px; font-weight:600; background:var(--surface-2); display:flex; justify-content:space-between; align-items:center; list-style:none;}
+  .child-doc summary::-webkit-details-marker{display:none;}
+  .child-doc .cdbody{padding:10px 12px; font-size:12px; color:var(--ink-soft);}
+  .doc-status-pill{font-size:10px; padding:2px 8px; border-radius:10px; font-weight:600;}
+  .doc-status-processed{background:var(--go-bg); color:var(--go);}
+  .doc-status-failed_download, .doc-status-failed_parse{background:var(--issue-bg); color:var(--issue);}
+  .doc-status-unsupported_type{background:var(--closed-bg); color:var(--closed);}
+  .warn-chip{display:inline-block; background:var(--review-bg); color:var(--review); border-radius:8px; padding:2px 8px; font-size:10.5px; margin:2px 4px 0 0;}
 
-  @media (max-width: 1000px){
+  .factor-list{list-style:none; margin:0; padding:0; font-size:12px;}
+  .factor-list li{padding:4px 0; border-bottom:1px dashed var(--line);}
+  .factor-list li:last-child{border-bottom:none;}
+  .factor-list.pos li::before{content:"▲ "; color:var(--go);}
+  .factor-list.neg li::before{content:"▼ "; color:var(--issue);}
+
+  textarea, .review-select{width:100%; padding:8px 10px; border-radius:8px; border:1px solid var(--line-strong); font-family:'IBM Plex Sans'; font-size:12.5px; margin-top:6px;}
+  .review-btn{padding:8px 14px; border-radius:8px; border:1px solid var(--accent); background:var(--accent); color:#fff; font-size:12.5px; cursor:pointer; margin-top:8px; margin-right:8px;}
+  .review-btn.secondary{background:transparent; color:var(--accent);}
+  .review-history{font-size:11.5px; color:var(--muted); margin-top:8px;}
+
+  .config-panel{display:none; margin:0 32px 16px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; box-shadow:var(--shadow);}
+  .config-panel.show{display:block;}
+  .config-panel .cgrid{display:grid; grid-template-columns:repeat(4,1fr); gap:12px;}
+  .config-panel label{font-size:11px; color:var(--muted); display:block; margin-bottom:4px;}
+  .config-panel input{width:100%; padding:7px 9px; border-radius:6px; border:1px solid var(--line-strong); font-family:'IBM Plex Mono',monospace; font-size:12px;}
+
+  footer{padding:20px 32px 40px; font-size:11.5px; color:var(--muted); text-align:center;}
+  @media (max-width:1100px){
     .kpi-strip{grid-template-columns:repeat(3,1fr);}
-    .insights{grid-template-columns:1fr;}
+    .dgrid{grid-template-columns:1fr;}
+    .req-row{grid-template-columns:16px 1fr; }
   }
-  @media (max-width: 640px){
-    header.top{padding:20px;}
-    .kpi-strip, .controls{padding-left:16px; padding-right:16px;}
-    .table-wrap{margin:16px;}
-    .kpi-strip{grid-template-columns:repeat(2,1fr);}
-  }
-
-  /* Drawer must always render above every sticky dashboard band and table header */
-  .scrim{z-index:1000 !important;}
-  .drawer{z-index:1001 !important;}
 </style>
 </head>
 <body>
@@ -422,635 +230,635 @@
       <div class="gate-mark"><span></span><span></span><span></span></div>
       <div>
         <h1>ProcMart Bid Eligibility Console</h1>
-        <div class="tag">GeM Phase-1 Screening &middot; Full BidDoc + ChildDoc + ProcMart Eligibility</div>
+        <div class="tag">GeM daily bid universe · requirement-level eligibility · human-review workflow</div>
       </div>
     </div>
     <div class="meta">
-      Snapshot <b id="snapDate">14 Aug 2026</b><br>
-      Source <b>GeM Bid Tracker</b><br>
-      <span id="metaTotal">161</span> bids tracked
+      Snapshot tab: <b id="snapDate">–</b><br>
+      Bids loaded: <b id="metaTotal">0</b><br>
+      Generated: <b id="metaGenerated">–</b>
     </div>
   </div>
+  <div class="date-bar">
+    <span class="dchip" data-preset="today">Today</span>
+    <span class="dchip" data-preset="yesterday">Yesterday</span>
+    <input type="date" id="customDate">
+    <button class="loadbtn" id="applyDateBtn">Load date</button>
+    <button class="loadbtn" id="loadFileBtn">Load JSON file…</button>
+    <input type="file" id="jsonFileInput" accept=".json">
+    <button class="loadbtn" id="toggleConfigBtn">⚙ Thresholds</button>
+  </div>
 </header>
+
+<div class="config-panel" id="configPanel">
+  <div class="cgrid">
+    <div><label>Qualified min score (%)</label><input type="number" id="cfgQualified" value="85"></div>
+    <div><label>Segment One min score (%)</label><input type="number" id="cfgSeg1" value="70"></div>
+    <div><label>Segment Two min score (%)</label><input type="number" id="cfgSeg2" value="50"></div>
+    <div><label>Review confidence ceiling (%)</label><input type="number" id="cfgReviewMax" value="65"></div>
+  </div>
+  <button class="review-btn" id="applyConfigBtn" style="margin-top:12px;">Apply &amp; reclassify</button>
+  <button class="review-btn secondary" id="resetConfigBtn" style="margin-top:12px;">Reset to defaults</button>
+  <div style="font-size:11px;color:var(--muted);margin-top:8px;">
+    These thresholds are configurable at runtime (stored in your browser) — mandatory / blocking-rule failures
+    still override the score-based segment regardless of these settings.
+  </div>
+</div>
 
 <div class="kpi-strip" id="kpiStrip"></div>
 
 <div class="controls">
   <div class="search-wrap">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" id="searchBox" placeholder="Search bid no, title, or department…">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#33415A" stroke-width="2"/><path d="M21 21l-4-4" stroke="#33415A" stroke-width="2" stroke-linecap="round"/></svg>
+    <input type="text" id="searchInput" placeholder="Search bid number, category, ministry, department…">
   </div>
-  <select id="deptFilter"><option value="">All Departments</option></select>
+  <select id="sectionFilter"><option value="">All business sections</option></select>
+  <select id="govtFilter"><option value="">Central / State / PSU</option></select>
+  <select id="sortSelect">
+    <option value="score-desc">Sort: Highest eligibility score</option>
+    <option value="conf-desc">Sort: Highest AI confidence</option>
+    <option value="days-asc">Sort: Earliest closing date</option>
+    <option value="value-desc">Sort: Highest bid value</option>
+    <option value="review-first">Sort: Most urgent review</option>
+  </select>
   <div class="right-controls">
-    <label class="toggle-pill"><input type="checkbox" id="hideClosedToggle" checked> Hide already-closed</label>
-    <select id="sortSelect">
-      <option value="days_left-asc">Sort: Days Left (soonest)</option>
-      <option value="rec-asc">Sort: Recommendation</option>
-      <option value="value-desc">Sort: Value (high→low)</option>
-      <option value="value-asc">Sort: Value (low→high)</option>
-      <option value="bid_no-asc">Sort: Bid No (A→Z)</option>
-    </select>
+    <label class="toggle-pill"><input type="checkbox" id="reviewOnly"> Human review only</label>
+    <label class="toggle-pill"><input type="checkbox" id="hideDisq"> Hide disqualified</label>
   </div>
+</div>
+<div class="filters-row2">
+  <div class="chip-group" id="statusChips"></div>
 </div>
 
 <div class="table-wrap">
-  <div class="table-scroll">
-    <table>
-      <colgroup>
-        <col class="col-gate"><col class="col-bidno"><col class="col-title"><col class="col-dept">
-        <col class="col-value"><col class="col-days"><col class="col-turnover"><col class="col-reseller">
-        <col class="col-child"><col class="col-elig"><col class="col-rec">
-      </colgroup>
-      <thead>
-        <tr id="tableHead"></tr>
-      </thead>
-      <tbody id="tableBody"></tbody>
-    </table>
-  </div>
-  <div class="table-footer">
-    <span id="footerCount">Showing 0 of 0</span>
-    <span>Click any row for full eligibility detail</span>
-  </div>
+  <table>
+    <thead>
+      <tr id="theadRow"></tr>
+    </thead>
+    <tbody id="tableBody">
+      <tr class="empty-row"><td colspan="12">Loading…</td></tr>
+    </tbody>
+  </table>
 </div>
 
-<div class="scrim" id="scrim"></div>
-<div class="drawer" id="drawer"></div>
+<footer>
+  ProcMart Bid Eligibility Console — internal tool. Eligibility outputs are AI-assisted estimates;
+  bids flagged for human review or classified as Segment One/Two must be manually confirmed before action.
+</footer>
 
-<script id="bid-data" type="application/json">[]</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<div class="overlay" id="overlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <button class="closeBtn" id="closeDrawer">✕</button>
+    <h2 id="drTitle">–</h2>
+    <div class="subtitle" id="drSubtitle">–</div>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+</div>
+
 <script>
 (function(){
   // ================= CONFIG =================
-  // Google Sheet ID from the shared link. The sheet must be shared as
-  // "Anyone with the link can view" for this in-browser fetch to work.
-  const SHEET_ID = '1BiZSN_TvhyNfX2aa4G9qucCs1GLxpbsPCWoKnsFuF4s';
+  const DEFAULT_CFG = { qualified: 85, seg1: 70, seg2: 50, reviewMax: 65 };
+  let CFG = loadCfg();
+  function loadCfg(){
+    try{ return Object.assign({}, DEFAULT_CFG, JSON.parse(localStorage.getItem('gem_cfg')||'{}')); }
+    catch(e){ return Object.assign({}, DEFAULT_CFG); }
+  }
+  function saveCfg(){ localStorage.setItem('gem_cfg', JSON.stringify(CFG)); }
 
-  // Allow manual override for testing via ?date=YYYY-MM-DD in the URL.
-  const qsDate = new URLSearchParams(window.location.search).get('date');
+  function loadReviews(){ try{ return JSON.parse(localStorage.getItem('gem_reviews')||'{}'); }catch(e){ return {}; } }
+  function saveReviews(r){ localStorage.setItem('gem_reviews', JSON.stringify(r)); }
+
+  const qs = new URLSearchParams(window.location.search);
+  const qsDate = qs.get('date');
 
   function istDateStr(offsetDays){
-    // Compute a Y-M-D date string in Asia/Kolkata, offset by offsetDays from "now".
     const now = new Date();
     const ist = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
     ist.setDate(ist.getDate() + offsetDays);
-    const y = ist.getFullYear();
-    const m = String(ist.getMonth() + 1).padStart(2, '0');
-    const d = String(ist.getDate()).padStart(2, '0');
+    const y = ist.getFullYear(); const m = String(ist.getMonth()+1).padStart(2,'0'); const d = String(ist.getDate()).padStart(2,'0');
     return `${y}-${m}-${d}`;
   }
 
-  const SHEET_TAB = qsDate || istDateStr(-1); // D-1 in IST
-  const GVIZ_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(SHEET_TAB)}`;
+  let currentDate = qsDate || istDateStr(0);
 
-  // ================= loading / error state =================
   const tbodyEl = document.getElementById('tableBody');
+  const theadRow = document.getElementById('theadRow');
   function showStatus(msg, isError){
-    tbodyEl.innerHTML = `<tr class="empty-row"><td colspan="11"${isError ? ' style="color:var(--issue)"' : ''}>${msg}</td></tr>`;
+    tbodyEl.innerHTML = `<tr class="empty-row"><td colspan="12"${isError?' style="color:var(--issue)"':''}>${msg}</td></tr>`;
   }
-  showStatus(`Loading bids for ${SHEET_TAB}…`, false);
 
-  fetch(GVIZ_URL)
-    .then(res => {
-      if(!res.ok) throw new Error(`Sheet request failed (HTTP ${res.status})`);
-      return res.text();
-    })
-    .then(csvText => {
-      if(/^\s*<(!doctype|html)/i.test(csvText)){
-        throw new Error(`Tab "${SHEET_TAB}" not found, or the sheet isn't shared as "Anyone with the link can view"`);
+  const COLUMNS = [
+    {key:'bid_number', label:'Bid Number'},
+    {key:'item_category', label:'Category / Item'},
+    {key:'business_section', label:'Section'},
+    {key:'govt_classification', label:'Govt.'},
+    {key:'status', label:'Eligibility Status'},
+    {key:'eligibility_score', label:'Score'},
+    {key:'ai_confidence', label:'AI Conf.'},
+    {key:'bid_value_inr', label:'Bid Value'},
+    {key:'days_left', label:'Days Left'},
+    {key:'docs', label:'Linked Docs'},
+    {key:'review', label:'Review'},
+  ];
+  theadRow.innerHTML = COLUMNS.map(c=>`<th>${c.label}</th>`).join('');
+
+  let RAW = null;      // raw loaded payload
+  let DATA = [];        // processed rows
+  const state = { search:'', section:'', govt:'', statusFilter:null, reviewOnly:false, hideDisq:false, sort:'score-desc' };
+
+  // ================= loading =================
+  function tryLoadJSON(url){
+    return fetch(url, {cache:'no-store'}).then(res=>{
+      if(!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.json();
+    });
+  }
+
+  function loadForDate(dateStr){
+    showStatus(`Loading bids for ${dateStr}…`, false);
+    currentDate = dateStr;
+    updateDateChips();
+    const candidates = [`bids_${dateStr}.json`, `bids-${dateStr}.json`, `bids.json`];
+    (async ()=>{
+      for(const url of candidates){
+        try{
+          const payload = await tryLoadJSON(url);
+          onPayload(payload);
+          return;
+        }catch(e){ /* try next candidate */ }
       }
-      const parsed = Papa.parse(csvText, { header: true, skipEmptyLines: true });
-      const DATA = buildData(parsed.data);
-      if(DATA.length === 0){
-        showStatus(`No bid rows found in tab "${SHEET_TAB}".`, true);
-        return;
+      showStatus(
+        `Couldn't find a bids JSON file for ${dateStr}. Expected one of: ${candidates.join(', ')} ` +
+        `in the same folder as this dashboard — or use "Load JSON file…" to pick one manually.`, true);
+    })();
+  }
+
+  document.getElementById('loadFileBtn').addEventListener('click', ()=> document.getElementById('jsonFileInput').click());
+  document.getElementById('jsonFileInput').addEventListener('change', (e)=>{
+    const file = e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev)=>{
+      try{ onPayload(JSON.parse(ev.target.result)); }
+      catch(err){ showStatus('Selected file is not valid JSON: ' + err.message, true); }
+    };
+    reader.readAsText(file);
+  });
+
+  document.querySelectorAll('.dchip').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      const preset = el.dataset.preset;
+      loadForDate(preset === 'today' ? istDateStr(0) : istDateStr(-1));
+    });
+  });
+  document.getElementById('applyDateBtn').addEventListener('click', ()=>{
+    const v = document.getElementById('customDate').value;
+    if(v) loadForDate(v);
+  });
+  function updateDateChips(){
+    document.querySelectorAll('.dchip').forEach(el=>{
+      const preset = el.dataset.preset;
+      const match = (preset==='today' && currentDate===istDateStr(0)) || (preset==='yesterday' && currentDate===istDateStr(-1));
+      el.classList.toggle('on', match);
+    });
+  }
+
+  // config panel
+  const configPanel = document.getElementById('configPanel');
+  document.getElementById('toggleConfigBtn').addEventListener('click', ()=> configPanel.classList.toggle('show'));
+  document.getElementById('cfgQualified').value = CFG.qualified;
+  document.getElementById('cfgSeg1').value = CFG.seg1;
+  document.getElementById('cfgSeg2').value = CFG.seg2;
+  document.getElementById('cfgReviewMax').value = CFG.reviewMax;
+  document.getElementById('applyConfigBtn').addEventListener('click', ()=>{
+    CFG = {
+      qualified: +document.getElementById('cfgQualified').value || DEFAULT_CFG.qualified,
+      seg1: +document.getElementById('cfgSeg1').value || DEFAULT_CFG.seg1,
+      seg2: +document.getElementById('cfgSeg2').value || DEFAULT_CFG.seg2,
+      reviewMax: +document.getElementById('cfgReviewMax').value || DEFAULT_CFG.reviewMax,
+    };
+    saveCfg();
+    if(RAW) onPayload(RAW, true);
+  });
+  document.getElementById('resetConfigBtn').addEventListener('click', ()=>{
+    CFG = Object.assign({}, DEFAULT_CFG); saveCfg();
+    document.getElementById('cfgQualified').value = CFG.qualified;
+    document.getElementById('cfgSeg1').value = CFG.seg1;
+    document.getElementById('cfgSeg2').value = CFG.seg2;
+    document.getElementById('cfgReviewMax').value = CFG.reviewMax;
+    if(RAW) onPayload(RAW, true);
+  });
+
+  // ================= reclassification (client-side, using CFG) =================
+  function reclassify(bid){
+    const score = bid.eligibility_score || 0;
+    const blocking = bid.scoring && bid.scoring.has_blocking_failure;
+    if(blocking){
+      bid._status = 'Disqualified';
+      bid._statusReason = bid.status_reason || ('Disqualified – blocking condition(s) failed: ' + (bid.scoring.blocking_conditions_failed||[]).join('; '));
+      bid._needsReview = false;
+      return;
+    }
+    let base;
+    if(score >= CFG.qualified) base = 'Qualified';
+    else if(score >= CFG.seg1) base = 'Segment One – Review';
+    else if(score >= CFG.seg2) base = 'Segment Two – Low Match';
+    else base = 'Disqualified';
+
+    const reasons = bid.human_review_reasons || [];
+    const conf = bid.ai_confidence || 0;
+    const needsReview = base !== 'Disqualified' && (conf <= CFG.reviewMax || reasons.length > 0 || bid.is_qcbs_or_special);
+
+    bid._status = needsReview ? 'Pending Human Review' : base;
+    bid._needsReview = needsReview;
+    bid._statusReason = `Score ${score}% (${base}); ` + (needsReview ? (reasons.length? reasons.join('; ') : `AI confidence ${conf}% in review band`) : 'thresholds satisfied');
+  }
+
+  function statusClass(status){
+    return 'status-' + status.replace(/[^A-Za-z]/g,'');
+  }
+
+  // ================= payload processing =================
+  function onPayload(payload, isReclassify){
+    RAW = payload;
+    const reviews = loadReviews();
+    DATA = (payload.bids || []).map(b=>{
+      const copy = Object.assign({}, b);
+      reclassify(copy);
+      // apply any locally-saved human review override
+      const key = copy.bid_number;
+      if(reviews[key] && reviews[key].resolved){
+        copy._humanOverride = reviews[key];
+        copy._status = reviews[key].final_status || copy._status;
+        copy._needsReview = false;
       }
-      initDashboard(DATA, SHEET_TAB);
-    })
-    .catch(err => {
-      console.error(err);
-      if(window.location.protocol === 'file:'){
-        showStatus(
-          `Can't fetch the sheet when this file is opened directly (file://) — Google blocks that. ` +
-          `Serve this file over http(s) instead, e.g. run <code>python3 -m http.server</code> in this folder ` +
-          `and open <code>http://localhost:8000/${encodeURIComponent(window.location.pathname.split('/').pop())}</code>, ` +
-          `or host it on any static web server.`, true);
-      } else {
-        showStatus(`Couldn't load bids for ${SHEET_TAB}: ${err.message}. Make sure the sheet is shared as "Anyone with the link can view" and that a tab named "${SHEET_TAB}" exists.`, true);
-      }
+      copy._daysLeft = computeDaysLeft(copy.end_date_raw);
+      copy._docsProcessed = (copy.documents && copy.documents.linked_documents_processed) || 0;
+      copy._docsFound = (copy.documents && copy.documents.linked_documents_found) || 0;
+      return copy;
     });
 
-  // ================= sheet -> record parsing =================
-
-  // Splits a "*Label: value ..." block (as produced by the eligibility parser)
-  // into an array of {label, value} fields.
-  function parseEligibilityBlock(raw){
-    if(!raw) return [];
-    const lines = String(raw).replace(/\r\n/g, '\n').split('\n');
-    const fields = [];
-    let curLabel = null, curVal = [];
-    lines.forEach(line => {
-      const m = line.match(/^\s*\*\s*([^:]+):\s*(.*)$/);
-      if(m){
-        if(curLabel !== null) fields.push({ label: curLabel, value: curVal.join(' ').trim() });
-        curLabel = m[1].trim();
-        curVal = [m[2].trim()];
-      } else if(curLabel !== null && line.trim()){
-        curVal.push(line.trim());
-      }
-    });
-    if(curLabel !== null) fields.push({ label: curLabel, value: curVal.join(' ').trim() });
-    return fields.filter(f => f.label);
+    if(!isReclassify){
+      document.getElementById('snapDate').textContent = payload.sheet_tab || currentDate;
+      document.getElementById('metaGenerated').textContent = payload.generated_at ? payload.generated_at.replace('T',' ').slice(0,19) : '–';
+      populateFilterOptions();
+    }
+    document.getElementById('metaTotal').textContent = DATA.length;
+    renderKPIs();
+    renderStatusChips();
+    render();
   }
 
-  function fieldValue(fields, label){
-    const f = fields.find(x => x.label.toLowerCase() === label.toLowerCase());
-    return f ? f.value : null;
-  }
-
-  const SOFT_CHILD_LABELS = new Set(['Scope Requirements', 'SLA & Penalty Clauses', 'Payment Terms Criteria']);
-
-  function classifyChildDoc(rawText, fields){
-    const t = (rawText || '').trim();
-    if(!t || /No nested child documents/i.test(t)) return { flag: 'N/A', notes: '-' };
-    if(/No additional restrictive eligibility clauses/i.test(t)) return { flag: 'Clear', notes: t };
-    const preview = fields.map(f => `${f.label}: ${f.value}`).join(' | ');
-    const allSoft = fields.length > 0 && fields.every(f => SOFT_CHILD_LABELS.has(f.label));
-    return { flag: allSoft ? 'Operational Notes Only' : 'Additional Reqs Found', notes: preview || '-' };
-  }
-
-  function parseSheetDate(s){
-    if(!s) return null;
-    const str = String(s).trim();
-    const m = str.match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})/);
-    if(m) return new Date(+m[1], +m[2] - 1, +m[3], +m[4], +m[5]);
-    const d = new Date(str);
-    return isNaN(d.getTime()) ? null : d;
-  }
-
-  function fmtEndDateDisp(d){
-    if(!d || isNaN(d.getTime())) return '-';
-    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    const dd = String(d.getDate()).padStart(2, '0');
-    const hh = String(d.getHours()).padStart(2, '0');
-    const mi = String(d.getMinutes()).padStart(2, '0');
-    return `${dd} ${months[d.getMonth()]} ${d.getFullYear()}, ${hh}:${mi}`;
-  }
-
-  function daysLeftFor(d){
-    if(!d || isNaN(d.getTime())) return null;
+  function computeDaysLeft(raw){
+    if(!raw) return null;
+    const d = new Date(raw);
+    if(isNaN(d.getTime())) return null;
     const now = new Date();
     const a = new Date(d.getFullYear(), d.getMonth(), d.getDate());
     const b = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    return Math.round((a - b) / 86400000);
+    return Math.round((a-b)/86400000);
   }
 
-  function parseValue(v){
-    if(v === undefined || v === null) return null;
-    const s = String(v).replace(/,/g, '').trim();
-    if(s === '' || s.toUpperCase() === 'NA') return null;
-    const n = parseFloat(s);
-    return isNaN(n) ? null : n;
+  function fmtINR(v){
+    if(v === null || v === undefined || isNaN(v)) return '–';
+    if(v >= 10000000) return '₹' + (v/10000000).toFixed(2) + ' Cr';
+    if(v >= 100000) return '₹' + (v/100000).toFixed(2) + ' L';
+    return '₹' + Math.round(v).toLocaleString('en-IN');
   }
 
-  // Converts parsed CSV rows (matching the GeM bid tracker sheet columns)
-  // into the record shape the dashboard renders.
-  function buildData(rows){
-    const out = [];
-    rows.forEach(row => {
-      const bidNo = (row['Bid No'] || row['Bid/RA Number'] || '').trim();
-      if(!bidNo) return; // skip blank / malformed rows
+  function populateFilterOptions(){
+    const sections = [...new Set(DATA.map(d=>d.business_section).filter(Boolean))].sort();
+    const sectionSel = document.getElementById('sectionFilter');
+    sectionSel.innerHTML = '<option value="">All business sections</option>' + sections.map(s=>`<option value="${s}">${s}</option>`).join('');
+    const govts = [...new Set(DATA.map(d=>d.govt_classification).filter(Boolean))].sort();
+    const govtSel = document.getElementById('govtFilter');
+    govtSel.innerHTML = '<option value="">Central / State / PSU</option>' + govts.map(s=>`<option value="${s}">${s}</option>`).join('');
+  }
 
-      const typ = (row['Type'] || '').trim().toUpperCase() === 'RA' ? 'RA' : 'BID';
-      const bidDocFields = parseEligibilityBlock(row['BidDoc_eligibility']);
-      const childDocFields = parseEligibilityBlock(row['ChildDoc_eligibility']);
-      const procmartFields = parseEligibilityBlock(row['Procmart_eligibility']);
+  // ================= KPIs =================
+  const STATUS_LIST = ['Qualified','Segment One – Review','Segment Two – Low Match','Disqualified','Pending Human Review'];
+  const STATUS_COLORVAR = {
+    'Qualified':'--st-qualified', 'Segment One – Review':'--st-seg1', 'Segment Two – Low Match':'--st-seg2',
+    'Disqualified':'--st-disq', 'Pending Human Review':'--st-review'
+  };
 
-      const turnoverStatus = fieldValue(procmartFields, 'Turnover Status') || '-';
-      const resellerStatus = fieldValue(procmartFields, 'Reseller Exclusivity') || '-';
-      const emdStatus = fieldValue(procmartFields, 'EMD Status') || '-';
-      const child = classifyChildDoc(row['ChildDoc_eligibility'], childDocFields);
-
-      const issues = [];
-      if(turnoverStatus.startsWith('REVIEW')) issues.push('Turnover Review');
-      if(resellerStatus.startsWith('CAUTION')) issues.push('OEM Auth Required');
-      if(child.flag === 'Additional Reqs Found') issues.push('Child Doc: Additional Requirements');
-      let rec;
-      if(issues.length === 0) rec = 'GO';
-      else if(issues.length > 1) rec = 'MULTIPLE ISSUES';
-      else rec = 'REVIEW - ' + issues[0];
-
-      const endDate = parseSheetDate(row['End Date (IST)']);
-      const dept = (row['Department'] || '').trim() || (row['Ministry'] || '').trim() || 'NA';
-
-      out.push({
-        bid_no: bidNo,
-        typ,
-        title: (row['Title / Items'] || '').trim(),
-        dept,
-        value: parseValue(row['Estimated Bid Value (INR, incl. taxes)']),
-        end_date: endDate ? endDate.toISOString() : null,
-        end_date_disp: fmtEndDateDisp(endDate),
-        days_left: daysLeftFor(endDate),
-        bid_url: (row['Bid Doc URL'] || '').trim(),
-        turnover_elig: fieldValue(bidDocFields, 'Turnover Eligibility') || '-',
-        exp_elig: fieldValue(bidDocFields, 'Experience Eligibility') || '-',
-        emd_amt: fieldValue(bidDocFields, 'EMD/Exemption Eligibility') || '-',
-        mii_pref: fieldValue(bidDocFields, 'MII/MSE/Startup Conditions') || '-',
-        oem_flag: fieldValue(bidDocFields, 'OEM/Manufacturer Eligibility') ? 'Yes' : 'No',
-        mand_certs: fieldValue(bidDocFields, 'Mandatory Certifications & Registrations') || '-',
-        turnover_status: turnoverStatus,
-        reseller_status: resellerStatus,
-        emd_status: emdStatus,
-        child_flag: child.flag,
-        child_notes: child.notes,
-        rec,
-        issues,
-        bid_doc_fields: bidDocFields,
-        bid_doc_fields_raw: (row['BidDoc_eligibility'] || '').trim(),
-        child_doc_fields: childDocFields,
-        child_doc_fields_raw: (row['ChildDoc_eligibility'] || '').trim(),
-        procmart_fields: procmartFields,
-        procmart_fields_raw: (row['Procmart_eligibility'] || '').trim(),
-      });
+  function renderKPIs(){
+    const strip = document.getElementById('kpiStrip');
+    const counts = {}; STATUS_LIST.forEach(s=>counts[s]=0);
+    DATA.forEach(d=>{ counts[d._status] = (counts[d._status]||0)+1; });
+    let html = `<div class="kpi ${state.statusFilter===null?'active':''}" data-status="__all"><div class="val">${DATA.length}</div><div class="lbl">All Bids</div><div class="bar" style="background:var(--accent)"></div></div>`;
+    STATUS_LIST.forEach(s=>{
+      html += `<div class="kpi ${state.statusFilter===s?'active':''}" data-status="${s}">
+        <div class="val">${counts[s]||0}</div><div class="lbl">${s}</div>
+        <div class="bar" style="background:var(${STATUS_COLORVAR[s]})"></div></div>`;
     });
-    return out;
-  }
-
-  // ================= dashboard rendering (unchanged from the static version) =================
-  function initDashboard(DATA, dateLabel){
-  document.getElementById('snapDate').textContent = dateLabel;
-  document.getElementById('metaTotal').textContent = DATA.length;
-
-    const COLORS = { go:'#0E7C6B', review:'#B4790F', issues:'#B33A3A', closed:'#8992A1', accent:'#1D4E89' };
-
-    // ---------- derive fields ----------
-    DATA.forEach(d=>{
-      d.recGroup = d.rec === 'GO' ? 'GO' : (d.rec === 'MULTIPLE ISSUES' ? 'ISSUES' : 'REVIEW');
-      d.isPast = d.days_left !== null && d.days_left < 0;
-      d.isUrgent = d.days_left !== null && d.days_left >= 0 && d.days_left <= 3;
-      d.isSoon = d.days_left !== null && d.days_left > 3 && d.days_left <= 7;
-    });
-
-    const state = {
-      search:'', dept:'', recFilter:null, hideClosed:true,
-      sort:'days_left-asc', kpiFilter:null
-    };
-
-    // ---------- KPI definitions ----------
-    const totalN = DATA.length;
-    const goN = DATA.filter(d=>d.rec==='GO').length;
-    const reviewN = DATA.filter(d=>d.recGroup==='REVIEW').length;
-    const issuesN = DATA.filter(d=>d.recGroup==='ISSUES').length;
-    const openN = DATA.filter(d=>!d.isPast);
-    const urgentN = openN.filter(d=>d.isUrgent).length;
-    const oemN = DATA.filter(d=>d.oem_flag==='Yes').length;
-
-    const kpis = [
-      {key:'all', label:'Total Bids', val: totalN, color: COLORS.accent},
-      {key:'go', label:'Ready to Process (GO)', val: goN, color: COLORS.go},
-      {key:'review', label:'Needs Review', val: reviewN, color: COLORS.review},
-      {key:'issues', label:'Multiple Issues', val: issuesN, color: COLORS.issues},
-      {key:'urgent', label:'Closing ≤ 3 Days (Open)', val: urgentN, color: COLORS.issues},
-      {key:'oem', label:'OEM Authorization Required', val: oemN, color: COLORS.review},
-    ];
-
-    const kpiStrip = document.getElementById('kpiStrip');
-    kpis.forEach(k=>{
-      const el = document.createElement('div');
-      el.className='kpi';
-      el.dataset.key = k.key;
-      el.innerHTML = `<div class="val" style="color:${k.color}">${k.val}</div><div class="lbl">${k.label}</div><div class="bar" style="background:${k.color}"></div>`;
+    strip.innerHTML = html;
+    strip.querySelectorAll('.kpi').forEach(el=>{
       el.addEventListener('click', ()=>{
-        state.kpiFilter = (state.kpiFilter === k.key) ? null : k.key;
-        document.querySelectorAll('.kpi').forEach(x=>x.classList.remove('active'));
-        if(state.kpiFilter) el.classList.add('active');
-        render();
+        const s = el.dataset.status;
+        state.statusFilter = (s === '__all') ? null : s;
+        renderKPIs(); renderStatusChips(); render();
       });
-      kpiStrip.appendChild(el);
     });
+  }
 
-    // ---------- department dropdown ----------
-    const deptSel = document.getElementById('deptFilter');
-    const deptCounts = {};
-    DATA.forEach(d=>{ deptCounts[d.dept] = (deptCounts[d.dept]||0)+1; });
-    Object.keys(deptCounts).sort((a,b)=>deptCounts[b]-deptCounts[a]).forEach(dep=>{
-      const o = document.createElement('option');
-      o.value = dep; o.textContent = `${dep} (${deptCounts[dep]})`;
-      deptSel.appendChild(o);
+  function renderStatusChips(){
+    const wrap = document.getElementById('statusChips');
+    wrap.innerHTML = STATUS_LIST.map(s=>
+      `<span class="chip ${state.statusFilter===s?'on':''}" data-s="${s}">${s}</span>`
+    ).join('');
+    wrap.querySelectorAll('.chip').forEach(el=>{
+      el.addEventListener('click', ()=>{
+        const s = el.dataset.s;
+        state.statusFilter = (state.statusFilter === s) ? null : s;
+        renderKPIs(); renderStatusChips(); render();
+      });
     });
-    deptSel.addEventListener('change', ()=>{ state.dept = deptSel.value; render(); });
+  }
 
-    // ---------- search ----------
-    const searchBox = document.getElementById('searchBox');
-    searchBox.addEventListener('input', ()=>{ state.search = searchBox.value.trim().toLowerCase(); render(); });
+  // ================= filters / search =================
+  document.getElementById('searchInput').addEventListener('input', e=>{ state.search = e.target.value.toLowerCase(); render(); });
+  document.getElementById('sectionFilter').addEventListener('change', e=>{ state.section = e.target.value; render(); });
+  document.getElementById('govtFilter').addEventListener('change', e=>{ state.govt = e.target.value; render(); });
+  document.getElementById('sortSelect').addEventListener('change', e=>{ state.sort = e.target.value; render(); });
+  document.getElementById('reviewOnly').addEventListener('change', e=>{ state.reviewOnly = e.target.checked; render(); });
+  document.getElementById('hideDisq').addEventListener('change', e=>{ state.hideDisq = e.target.checked; render(); });
 
-    // ---------- hide-closed toggle & sort select (wired to state) ----------
-    const hideClosedToggle = document.getElementById('hideClosedToggle');
-    hideClosedToggle.addEventListener('change', ()=>{ state.hideClosed = hideClosedToggle.checked; render(); });
-    const sortSelect = document.getElementById('sortSelect');
-    sortSelect.addEventListener('change', ()=>{ state.sort = sortSelect.value; render(); });
-
-
-    // ---------- table ----------
-    const columns = [
-      {key:'gate', label:'Gate', sortable:false},
-      {key:'bid_no', label:'Bid No', sortable:true},
-      {key:'title', label:'Title', sortable:false},
-      {key:'dept', label:'Department', sortable:true},
-      {key:'value', label:'Value (INR)', sortable:true},
-      {key:'days_left', label:'Days Left', sortable:true},
-      {key:'turnover_status', label:'Turnover', sortable:false},
-      {key:'reseller_status', label:'Reseller', sortable:false},
-      {key:'child_flag', label:'Child Doc', sortable:false},
-      {key:'eligibility_summary', label:'Eligibility Checks', sortable:false},
-      {key:'rec', label:'Recommendation', sortable:true},
-    ];
-    const thead = document.getElementById('tableHead');
-    columns.forEach(c=>{
-      const th = document.createElement('th');
-      th.textContent = c.label;
-      if(c.sortable){
-        th.addEventListener('click', ()=>{
-          const [curKey, curDir] = state.sort.split('-');
-          const newDir = (curKey===c.key && curDir==='asc') ? 'desc' : 'asc';
-          state.sort = `${c.key}-${newDir}`;
-          sortSelect.value = ['days_left-asc','rec-asc','value-desc','value-asc','bid_no-asc'].includes(state.sort) ? state.sort : sortSelect.value;
-          render();
-        });
+  function applyFilters(){
+    return DATA.filter(d=>{
+      if(state.statusFilter && d._status !== state.statusFilter) return false;
+      if(state.section && d.business_section !== state.section) return false;
+      if(state.govt && d.govt_classification !== state.govt) return false;
+      if(state.reviewOnly && !d._needsReview) return false;
+      if(state.hideDisq && d._status === 'Disqualified') return false;
+      if(state.search){
+        const blob = `${d.bid_number} ${d.item_category} ${d.ministry} ${d.department} ${d.organisation}`.toLowerCase();
+        if(!blob.includes(state.search)) return false;
       }
-      thead.appendChild(th);
+      return true;
     });
+  }
 
-    const tbody = document.getElementById('tableBody');
-    const footerCount = document.getElementById('footerCount');
-
-    function fmtINR(v){
-      if(v===null || v===undefined || isNaN(v)) return '—';
-      return '₹' + Math.round(v).toLocaleString('en-IN');
+  function applySort(list){
+    const l = list.slice();
+    switch(state.sort){
+      case 'score-desc': l.sort((a,b)=>(b.eligibility_score||0)-(a.eligibility_score||0)); break;
+      case 'conf-desc': l.sort((a,b)=>(b.ai_confidence||0)-(a.ai_confidence||0)); break;
+      case 'days-asc': l.sort((a,b)=>{
+          const av = a._daysLeft===null?9999:a._daysLeft, bv = b._daysLeft===null?9999:b._daysLeft; return av-bv; }); break;
+      case 'value-desc': l.sort((a,b)=>(b.bid_value_inr||0)-(a.bid_value_inr||0)); break;
+      case 'review-first': l.sort((a,b)=>(b._needsReview===true)-(a._needsReview===true)); break;
     }
+    return l;
+  }
 
-    function gateCellHTML(d){
-      const seg = (ok, warnClass)=> ok ? '<span class="g"></span>' : `<span class="${warnClass}"></span>`;
-      const turnoverOK = d.turnover_status.startsWith('MET');
-      const resellerOK = d.reseller_status.startsWith('MET');
-      const childOK = d.child_flag !== 'Additional Reqs Found';
-      return `<div class="gate">
-        ${turnoverOK? '<span class="g"></span>' : '<span class="x"></span>'}
-        ${resellerOK? '<span class="g"></span>' : '<span class="r"></span>'}
-        ${childOK? '<span class="g"></span>' : '<span class="r"></span>'}
+  function render(){
+    const list = applySort(applyFilters());
+    if(list.length===0){ showStatus('No bids match the current filters.', false); return; }
+    tbodyEl.innerHTML = list.map(rowHTML).join('');
+    tbodyEl.querySelectorAll('tr[data-bid]').forEach(tr=>{
+      tr.addEventListener('click', ()=> openDrawer(tr.dataset.bid));
+    });
+  }
+
+  function rowHTML(d){
+    const stClass = statusClass(d._status);
+    const scoreColor = d.eligibility_score>=CFG.qualified?'var(--go)':(d.eligibility_score>=CFG.seg1?'var(--review)':(d.eligibility_score>=CFG.seg2?'#C97A2B':'var(--issue)'));
+    let daysHTML = '–';
+    if(d._daysLeft!==null){
+      const cls = d._daysLeft<=3? 'days-urgent' : (d._daysLeft<=7?'days-soon':'days-ok');
+      daysHTML = `<span class="days-pill ${cls}">${d._daysLeft<0?'Closed':d._daysLeft+'d'}</span>`;
+    }
+    const blockIcon = (d.scoring && d.scoring.has_blocking_failure) ? '<span class="blocking-flag" title="Blocking condition failed">⛔</span>' : '';
+    const reviewIcon = d._needsReview ? '<span class="review-flag">● Review</span>' : (d._humanOverride ? '<span style="color:var(--go);font-size:11px;">✓ Reviewed</span>' : '<span style="color:var(--muted);font-size:11px;">–</span>');
+    return `<tr data-bid="${escapeHTML(d.bid_number)}">
+      <td class="mono" style="font-weight:600;">${escapeHTML(d.bid_number)} ${blockIcon}</td>
+      <td>${escapeHTML((d.item_category||'').slice(0,60))}</td>
+      <td><span class="section-pill">${escapeHTML(d.business_section||'–')}</span></td>
+      <td>${escapeHTML(d.govt_classification||'–')}</td>
+      <td><span class="status-badge ${stClass}"><span class="dot"></span>${d._status}</span></td>
+      <td><span class="score-bar-wrap"><span class="score-bar" style="width:${Math.max(0,Math.min(100,d.eligibility_score||0))}%; background:${scoreColor}"></span></span><span class="score-num">${(d.eligibility_score||0)}%</span></td>
+      <td><span class="conf-pill">${d.ai_confidence||0}%</span></td>
+      <td class="mono">${fmtINR(d.bid_value_inr)}</td>
+      <td>${daysHTML}</td>
+      <td class="docs-pill">${d._docsProcessed}/${d._docsFound}</td>
+      <td>${reviewIcon}</td>
+    </tr>`;
+  }
+
+  function escapeHTML(s){ return String(s==null?'':s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+  // ================= drawer =================
+  const overlay = document.getElementById('overlay');
+  const drawer = document.getElementById('drawer');
+  document.getElementById('closeDrawer').addEventListener('click', closeDrawer);
+  overlay.addEventListener('click', closeDrawer);
+  function closeDrawer(){ overlay.classList.remove('show'); drawer.classList.remove('show'); }
+
+  function openDrawer(bidNo){
+    const d = DATA.find(x=>x.bid_number===bidNo);
+    if(!d) return;
+    document.getElementById('drTitle').textContent = d.bid_number;
+    document.getElementById('drSubtitle').textContent = `${d.item_category||''} · ${d.ministry||''} ${d.organisation? '· '+d.organisation:''}`;
+    document.getElementById('drawerBody').innerHTML = buildDrawerHTML(d);
+    wireDrawerEvents(d);
+    overlay.classList.add('show'); drawer.classList.add('show');
+  }
+
+  function buildDrawerHTML(d){
+    const stClass = statusClass(d._status);
+    const colorVar = STATUS_COLORVAR[d._status] || '--muted';
+
+    // ---- 1. overview ----
+    const overview = `
+      <div class="dsection">
+        <h3>Bid Overview</h3>
+        <div class="dgrid">
+          <div class="dfield"><div class="k">Bid Number</div><div class="v mono">${escapeHTML(d.bid_number)}</div></div>
+          <div class="dfield"><div class="k">Business Section</div><div class="v">${escapeHTML(d.business_section||'–')}</div></div>
+          <div class="dfield"><div class="k">Government Classification</div><div class="v">${escapeHTML(d.govt_classification||'–')}</div></div>
+          <div class="dfield"><div class="k">Category / Item</div><div class="v">${escapeHTML(d.item_category||'–')}</div></div>
+          <div class="dfield"><div class="k">Ministry / Organisation</div><div class="v">${escapeHTML(d.ministry||'–')} ${d.organisation?('/ '+escapeHTML(d.organisation)):''}</div></div>
+          <div class="dfield"><div class="k">Bid Value</div><div class="v">${fmtINR(d.bid_value_inr)}</div></div>
+          <div class="dfield"><div class="k">EMD Amount</div><div class="v">${fmtINR(d.emd_amount_inr)}</div></div>
+          <div class="dfield"><div class="k">Evaluation Method</div><div class="v">${escapeHTML(d.evaluation_method||'–')} ${d.is_qcbs_or_special?'<span class="req-status-chip amber">QCBS / Special</span>':''}</div></div>
+          <div class="dfield"><div class="k">Days Remaining</div><div class="v">${d._daysLeft===null?'–':(d._daysLeft<0?'Closed':d._daysLeft+' day(s)')}</div></div>
+          <div class="dfield"><div class="k">Bid Document</div><div class="v"><a href="${escapeHTML(d.bid_doc_url||'#')}" target="_blank" rel="noopener">Open original ↗</a></div></div>
+        </div>
       </div>`;
-    }
 
-    function recBadgeHTML(d){
-      const cls = d.recGroup==='GO' ? 'go' : (d.recGroup==='ISSUES' ? 'issues' : 'review');
-      return `<span class="rec-badge ${cls}">${d.rec}</span>`;
-    }
+    // ---- 2. recommendation ----
+    const reco = `
+      <div class="dsection">
+        <h3>Final Recommendation</h3>
+        <div class="recommend-box" style="background:var(${colorVar}, var(--surface-2)); border-color:var(${colorVar});">
+          <div class="rtitle"><span class="status-badge ${stClass}"><span class="dot"></span>${d._status}</span></div>
+          <div class="rreason">${escapeHTML(d._statusReason||d.status_reason||'')}</div>
+        </div>
+        ${d._humanOverride ? `<div class="review-history">Reviewer decision on file: <b>${escapeHTML(d._humanOverride.final_status)}</b> — "${escapeHTML(d._humanOverride.comment||'')}" (reason: ${escapeHTML(d._humanOverride.reason||'–')})</div>` : ''}
+      </div>`;
 
-    function daysCellHTML(d){
-      if(d.days_left===null) return '<span class="days-cell">—</span>';
-      let cls = '';
-      if(d.isPast) cls='past';
-      else if(d.isUrgent) cls='urgent';
-      else if(d.isSoon) cls='soon';
-      const label = d.isPast ? `${Math.abs(d.days_left)}d ago` : `${d.days_left}d`;
-      return `<span class="days-cell ${cls}">${label}</span>`;
-    }
+    // ---- 3. requirement-by-requirement ----
+    const legend = `<div class="legend">
+        <span><span class="dot" style="background:var(--go)"></span>Passed</span>
+        <span><span class="dot" style="background:var(--issue)"></span>Failed</span>
+        <span><span class="dot" style="background:var(--review)"></span>Needs review / Partial</span>
+        <span><span class="dot" style="background:var(--closed)"></span>Not found / N/A</span>
+        <span><span class="dot" style="background:var(--blue)"></span>Identified, awaiting validation</span>
+      </div>`;
+    const reqRows = (d.requirements||[]).map(r=>`
+      <div class="req-row">
+        <div class="req-dot ${r.color}"></div>
+        <div>
+          <div class="req-name">${escapeHTML(r.name)}${r.mandatory?'<span class="req-mand">MANDATORY</span>':''}</div>
+          <div class="req-cat">${escapeHTML(r.category)} · source: ${escapeHTML(r.evidence_doc||'–')}</div>
+          ${r.notes?`<div class="req-notes">${escapeHTML(r.notes)}</div>`:''}
+        </div>
+        <div><span class="req-status-chip ${r.color}">${escapeHTML(r.status)}</span></div>
+        <div class="req-evidence">${escapeHTML(r.required_value||'–')}${r.evidence_snippet?('<br><span style="color:var(--muted)">"'+escapeHTML(r.evidence_snippet)+'"</span>'):''}</div>
+      </div>`).join('');
+    const reqSection = `
+      <div class="dsection">
+        <h3>Requirement-by-Requirement Evaluation</h3>
+        ${legend}
+        ${reqRows || '<div style="color:var(--muted);font-size:12.5px;">No structured requirements extracted.</div>'}
+      </div>`;
 
-    function applyFilters(){
-      return DATA.filter(d=>{
-        if(state.hideClosed && d.isPast) return false;
-        if(state.dept && d.dept!==state.dept) return false;
-        if(state.search){
-          const hay = (d.bid_no+' '+d.title+' '+d.dept).toLowerCase();
-          if(!hay.includes(state.search)) return false;
-        }
-        if(state.kpiFilter){
-          if(state.kpiFilter==='go' && d.recGroup!=='GO') return false;
-          if(state.kpiFilter==='review' && d.recGroup!=='REVIEW') return false;
-          if(state.kpiFilter==='issues' && d.recGroup!=='ISSUES') return false;
-          if(state.kpiFilter==='urgent' && !(d.isUrgent && !d.isPast)) return false;
-          if(state.kpiFilter==='oem' && d.oem_flag!=='Yes') return false;
-        }
-        return true;
+    // ---- 4. scoring transparency ----
+    const sc = d.scoring || {};
+    const scoreSection = `
+      <div class="dsection">
+        <h3>Scoring Transparency</h3>
+        <div class="dgrid">
+          <div class="dfield"><div class="k">Eligibility Score</div><div class="v">${d.eligibility_score||0}%</div></div>
+          <div class="dfield"><div class="k">AI Confidence</div><div class="v">${d.ai_confidence||0}%</div></div>
+          <div class="dfield"><div class="k">Classification Basis</div><div class="v">${sc.classification_basis==='hard_rule' ? 'Hard rule (blocking condition)' : 'Weighted requirement score'}</div></div>
+          <div class="dfield"><div class="k">Business Priority</div><div class="v">${escapeHTML(d.business_section||'–')} · ${escapeHTML(d.govt_classification||'–')}</div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px;">
+          <div>
+            <div class="k" style="font-size:11px;color:var(--muted);margin-bottom:6px;">CONTRIBUTED POSITIVELY</div>
+            <ul class="factor-list pos">${(sc.contributing_factors||[]).map(f=>`<li>${escapeHTML(f)}</li>`).join('') || '<li style="opacity:.5">None</li>'}</ul>
+          </div>
+          <div>
+            <div class="k" style="font-size:11px;color:var(--muted);margin-bottom:6px;">REDUCED THE SCORE</div>
+            <ul class="factor-list neg">${(sc.reducing_factors||[]).map(f=>`<li>${escapeHTML(f)}</li>`).join('') || '<li style="opacity:.5">None</li>'}</ul>
+          </div>
+        </div>
+        ${sc.has_blocking_failure ? `<div style="margin-top:12px;padding:10px 12px;border-radius:8px;background:var(--st-disq-bg);color:var(--st-disq);font-size:12.5px;font-weight:600;">
+            ⛔ Blocking condition(s) override the score: ${escapeHTML((sc.blocking_conditions_failed||[]).join(', '))}
+          </div>` : ''}
+      </div>`;
+
+    // ---- 5. linked / child documents ----
+    const docs = d.documents || {};
+    const childHTML = (docs.children||[]).map((c,i)=>`
+      <details class="child-doc">
+        <summary>
+          <span>${escapeHTML(c.name)} <span style="color:var(--muted);font-weight:400;">(${escapeHTML(c.type)})</span></span>
+          <span class="doc-status-pill doc-status-${c.status}">${escapeHTML(c.status.replace(/_/g,' '))}</span>
+        </summary>
+        <div class="cdbody">
+          <div><b>Extracted requirements found:</b> ${(c.requirements_found&&c.requirements_found.length)? escapeHTML(c.requirements_found.join(', ')) : 'None detected'}</div>
+          <div style="margin-top:6px;"><b>Text extracted:</b> ${c.char_count||0} characters across ${c.page_count||0} page(s)</div>
+          ${(c.warnings&&c.warnings.length) ? `<div style="margin-top:6px;">${c.warnings.map(w=>`<span class="warn-chip">⚠ ${escapeHTML(w)}</span>`).join('')}</div>` : ''}
+          <div style="margin-top:8px;"><a href="${escapeHTML(c.url)}" target="_blank" rel="noopener">Open original document ↗</a></div>
+        </div>
+      </details>`).join('');
+    const docsSection = `
+      <div class="dsection">
+        <h3>Linked-Document Analysis</h3>
+        <div class="dgrid" style="margin-bottom:12px;">
+          <div class="dfield"><div class="k">Documents Found</div><div class="v">${docs.linked_documents_found||0}</div></div>
+          <div class="dfield"><div class="k">Successfully Processed</div><div class="v">${docs.linked_documents_processed||0}</div></div>
+          <div class="dfield"><div class="k">Failed / Unreadable</div><div class="v">${docs.linked_documents_failed||0}</div></div>
+          <div class="dfield"><div class="k">Regional Language Detected</div><div class="v">${(docs.regional_language_detected&&docs.regional_language_detected.length)?escapeHTML(docs.regional_language_detected.join(', ')):'None'}</div></div>
+        </div>
+        ${(docs.main_document_quality_warnings&&docs.main_document_quality_warnings.length) ? `<div style="margin-bottom:10px;">${docs.main_document_quality_warnings.map(w=>`<span class="warn-chip">⚠ ${escapeHTML(w)}</span>`).join('')}</div>` : ''}
+        ${childHTML || '<div style="color:var(--muted);font-size:12.5px;">No linked child documents were found in the main bid PDF.</div>'}
+      </div>`;
+
+    // ---- 6. AI confidence & warnings ----
+    const warnHTML = (d.human_review_reasons||[]).map(w=>`<span class="warn-chip">⚠ ${escapeHTML(w)}</span>`).join('') || '<span style="color:var(--muted);font-size:12px;">No confidence warnings.</span>';
+    const confSection = `
+      <div class="dsection">
+        <h3>AI Confidence &amp; Warnings</h3>
+        <div style="margin-bottom:8px;">${warnHTML}</div>
+        <div style="font-size:12px;color:var(--muted);">
+          AI confidence (${d.ai_confidence||0}%) and eligibility score (${d.eligibility_score||0}%) are tracked separately —
+          a high score does not qualify a bid if confidence is low or a mandatory condition failed.
+        </div>
+      </div>`;
+
+    // ---- 7. human review workflow ----
+    const reviewSection = `
+      <div class="dsection">
+        <h3>Human Review</h3>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">
+          ${d._needsReview ? 'This bid is flagged for human review before it can be treated as fully qualified.' : 'This bid does not currently require human review, but you may still record an override.'}
+        </div>
+        <label style="font-size:11px;color:var(--muted);">Final eligibility status</label>
+        <select class="review-select" id="reviewFinalStatus">
+          ${STATUS_LIST.map(s=>`<option value="${s}" ${s===d._status?'selected':''}>${s}</option>`).join('')}
+        </select>
+        <label style="font-size:11px;color:var(--muted);">Reason for confirmation / override</label>
+        <select class="review-select" id="reviewReason">
+          <option>AI result confirmed as correct</option>
+          <option>Incorrect extraction</option>
+          <option>Missed requirement</option>
+          <option>False qualification</option>
+          <option>False disqualification</option>
+          <option>Product/experience equivalence judgement call</option>
+          <option>Regional-language document manually verified</option>
+          <option>Other</option>
+        </select>
+        <label style="font-size:11px;color:var(--muted);">Comments</label>
+        <textarea id="reviewComment" rows="2" placeholder="Add reviewer notes...">${escapeHTML(d._humanOverride?d._humanOverride.comment:'')}</textarea>
+        <div>
+          <button class="review-btn" id="saveReviewBtn">Save review decision</button>
+          ${d._humanOverride?'<button class="review-btn secondary" id="clearReviewBtn">Clear override</button>':''}
+        </div>
+      </div>`;
+
+    return overview + reco + reqSection + scoreSection + docsSection + confSection + reviewSection;
+  }
+
+  function wireDrawerEvents(d){
+    const saveBtn = document.getElementById('saveReviewBtn');
+    if(saveBtn){
+      saveBtn.addEventListener('click', ()=>{
+        const reviews = loadReviews();
+        reviews[d.bid_number] = {
+          resolved: true,
+          final_status: document.getElementById('reviewFinalStatus').value,
+          reason: document.getElementById('reviewReason').value,
+          comment: document.getElementById('reviewComment').value,
+          reviewed_at: new Date().toISOString(),
+        };
+        saveReviews(reviews);
+        onPayload(RAW, true);
+        openDrawer(d.bid_number);
       });
     }
-
-    function applySort(list){
-      const [key, dir] = state.sort.split('-');
-      const mul = dir==='asc' ? 1 : -1;
-      const recOrder = {'GO':0};
-      list.sort((a,b)=>{
-        let av, bv;
-        if(key==='days_left'){
-          av = a.days_left===null ? 9999 : a.days_left;
-          bv = b.days_left===null ? 9999 : b.days_left;
-        } else if(key==='value'){
-          av = (a.value===null||a.value===undefined) ? -1 : a.value;
-          bv = (b.value===null||b.value===undefined) ? -1 : b.value;
-        } else if(key==='rec'){
-          const rank = d => d.recGroup==='ISSUES'?0:(d.recGroup==='REVIEW'?1:2);
-          av = rank(a); bv = rank(b);
-        } else {
-          av = (a[key]||'').toString().toLowerCase();
-          bv = (b[key]||'').toString().toLowerCase();
-        }
-        if(av<bv) return -1*mul;
-        if(av>bv) return 1*mul;
-        return 0;
+    const clearBtn = document.getElementById('clearReviewBtn');
+    if(clearBtn){
+      clearBtn.addEventListener('click', ()=>{
+        const reviews = loadReviews();
+        delete reviews[d.bid_number];
+        saveReviews(reviews);
+        onPayload(RAW, true);
+        openDrawer(d.bid_number);
       });
-      return list;
     }
-
-    function render(){
-      let list = applyFilters();
-      list = applySort(list.slice());
-      tbody.innerHTML='';
-      if(list.length===0){
-        tbody.innerHTML = `<tr class="empty-row"><td colspan="${columns.length}">No bids match the current filters.</td></tr>`;
-      } else {
-        list.forEach(d=>{
-          const tr = document.createElement('tr');
-          tr.innerHTML = `
-            <td>${gateCellHTML(d)}</td>
-            <td class="bidno">${d.bid_no}</td>
-            <td class="title-cell"><div class="t">${escapeHTML(d.title)}</div></td>
-            <td class="dept-cell">${escapeHTML(d.dept)}</td>
-            <td class="mono">${fmtINR(d.value)}</td>
-            <td>${daysCellHTML(d)}</td>
-            <td style="font-size:11.5px">${escapeHTML(d.turnover_status)}</td>
-            <td style="font-size:11.5px">${escapeHTML(d.reseller_status)}</td>
-            <td style="font-size:11.5px">${escapeHTML(d.child_flag)}</td>
-            <td class="eligibility-cell" style="font-size:11.5px">${eligCellHTML(d)}</td>
-            <td>${recBadgeHTML(d)}</td>
-          `;
-          tr.addEventListener('click', ()=>openDrawer(d));
-          tbody.appendChild(tr);
-        });
-      }
-      footerCount.textContent = `Showing ${list.length} of ${totalN}`;
-    }
-
-    function eligCellHTML(d){
-      const labels = [
-        ...(d.bid_doc_fields || []),
-        ...(d.child_doc_fields || []),
-        ...(d.procmart_fields || [])
-      ].map(f => escapeHTML(f.label)).join(' · ');
-      if(!labels) return '<span style="color:var(--muted)">—</span>';
-      // Only show the toggle when the text is long enough to likely overflow the 3-line clamp.
-      const needsToggle = labels.length > 90;
-      return `<div class="elig-wrap">${labels}</div>${needsToggle ? '<span class="elig-toggle">Read more</span>' : ''}`;
-    }
-
-    // Expand/collapse the Eligibility Checks cell without triggering the row's drawer-open click.
-    tbody.addEventListener('click', (e)=>{
-      const toggle = e.target.closest('.elig-toggle');
-      if(!toggle) return;
-      e.stopPropagation();
-      const wrap = toggle.previousElementSibling;
-      const expanded = wrap.classList.toggle('expanded');
-      toggle.textContent = expanded ? 'Read less' : 'Read more';
-    });
-
-    function escapeHTML(s){
-      if(s===null||s===undefined) return '';
-      return s.toString().replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-    }
-
-    // ---------- drawer ----------
-    const scrim = document.getElementById('scrim');
-    const drawer = document.getElementById('drawer');
-
-    function recCalloutHTML(d){
-      const cls = d.recGroup==='GO' ? 'go' : (d.recGroup==='ISSUES'?'issues':'review');
-      const bg = cls==='go'? 'var(--go-bg)' : cls==='issues' ? 'var(--issue-bg)' : 'var(--review-bg)';
-      const col = cls==='go'? 'var(--go)' : cls==='issues' ? 'var(--issue)' : 'var(--review)';
-      const border = cls==='go'? 'var(--go-line)' : cls==='issues' ? 'var(--issue-line)' : 'var(--review-line)';
-      return `<div class="rec-callout" style="background:${bg};color:${col};border:1px solid ${border}">${gateCellHTML(d)} ${d.rec}</div>`;
-    }
-
-    function eligibilityFieldsHTML(fields){
-      if(!fields || !fields.length){
-        return `<div class="dnote">No structured eligibility fields found.</div>`;
-      }
-      return `<div class="elig-grid">` +
-        fields.map(f => `
-          <div class="elig-field">
-            <div class="k">${escapeHTML(f.label)}</div>
-            <div class="v">${escapeHTML(f.value)}</div>
-          </div>
-        `).join('') +
-        `</div>`;
-    }
-
-    function eligibilitySectionHTML(title, sourceName, fields, rawText){
-      return `
-        <div class="dsec">
-          <h4>${escapeHTML(title)}</h4>
-          <div class="elig-source">${escapeHTML(sourceName)} · ${fields ? fields.length : 0} fields detected</div>
-          ${eligibilityFieldsHTML(fields)}
-          ${rawText && rawText !== '-' ? `
-            <details class="raw-elig">
-              <summary>Show complete extracted text</summary>
-              <pre>${escapeHTML(rawText)}</pre>
-            </details>
-          ` : ''}
-        </div>
-      `;
-    }
-
-    function openDrawer(d){
-      drawer.innerHTML = `
-        <div class="drawer-head">
-          <button class="drawer-close" id="drawerClose">✕</button>
-          <div class="bidno mono">${escapeHTML(d.bid_no)}</div>
-          <h2>${escapeHTML(d.title)}</h2>
-          <div class="dept-line">${escapeHTML(d.dept)} &middot; Value ${fmtINR(d.value)} &middot; Closes ${escapeHTML(d.end_date_disp)}</div>
-        </div>
-
-        <div class="drawer-body">
-          <div class="dsec">${recCalloutHTML(d)}</div>
-
-          ${eligibilitySectionHTML(
-            'Bid document eligibility',
-            'BidDoc_eligibility',
-            d.bid_doc_fields || [],
-            d.bid_doc_fields_raw || ''
-          )}
-
-          ${eligibilitySectionHTML(
-            'Child / nested document eligibility',
-            'ChildDoc_eligibility',
-            d.child_doc_fields || [],
-            d.child_doc_fields_raw || ''
-          )}
-
-          ${eligibilitySectionHTML(
-            'ProcMart eligibility check',
-            'Procmart_eligibility',
-            d.procmart_fields || [],
-            d.procmart_fields_raw || ''
-          )}
-
-          <div class="dsec">
-            <h4>Screening outcome</h4>
-            <div class="dgrid">
-              <div class="dfield">
-                <div class="k">Recommendation</div>
-                <div class="v">${escapeHTML(d.rec)}</div>
-              </div>
-              <div class="dfield">
-                <div class="k">Child Document Flag</div>
-                <div class="v">${escapeHTML(d.child_flag)}</div>
-              </div>
-            </div>
-            ${Array.isArray(d.issues) && d.issues.length ? `
-              <div class="dnote" style="margin-top:10px">
-                <b>Issues:</b> ${escapeHTML(d.issues.join(' · '))}
-              </div>
-            ` : ''}
-          </div>
-
-          ${d.bid_url ? `<a class="btn-link" href="${escapeHTML(d.bid_url)}" target="_blank" rel="noopener">Open Bid Document ↗</a>` : ''}
-        </div>
-      `;
-      document.getElementById('drawerClose').addEventListener('click', closeDrawer);
-      scrim.classList.add('on');
-      drawer.classList.add('on');
-    }
-
-    function closeDrawer(){
-      scrim.classList.remove('on');
-      drawer.classList.remove('on');
-    }
-    scrim.addEventListener('click', closeDrawer);
-    document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeDrawer(); });
-
-
-  render();
   }
-})();
-</script>
 
+  // ================= init =================
+  document.getElementById('customDate').value = currentDate;
+  updateDateChips();
+  loadForDate(currentDate);
 
-<script>
-(function(){
-  function updateStickyOffsets(){
-    const top = document.querySelector('header.top');
-    const kpi = document.querySelector('.kpi-strip');
-    const controls = document.querySelector('.controls');
-    if(!top || !kpi || !controls) return;
-    const topH = top.getBoundingClientRect().height;
-    const kpiH = kpi.getBoundingClientRect().height;
-    const controlsH = controls.getBoundingClientRect().height;
-    document.documentElement.style.setProperty('--top-h', topH + 'px');
-    document.documentElement.style.setProperty('--kpi-top', (topH + kpiH) + 'px');
-    document.documentElement.style.setProperty('--table-head-top', (topH + kpiH + controlsH) + 'px');
-  }
-  window.addEventListener('load', updateStickyOffsets);
-  window.addEventListener('resize', updateStickyOffsets);
-  if(document.fonts && document.fonts.ready) document.fonts.ready.then(updateStickyOffsets);
-  setTimeout(updateStickyOffsets, 100);
 })();
 </script>
 </body>
