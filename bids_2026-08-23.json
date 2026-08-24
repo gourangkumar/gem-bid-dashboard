@@ -1,0 +1,2515 @@
+{
+  "generated_at": "2026-08-24T10:47:51.905476",
+  "sheet_tab": "2026-08-23",
+  "bid_count": 9,
+  "bids": [
+    {
+      "bid_number": "GEM/2026/B/7945842",
+      "bid_doc_url": "https://bidplus.gem.gov.in/showbidDocument/9788269",
+      "item_category": "Custom Bid for Services - HIRING OF SERVICES FOR OPERATIONS AND MAINTENANCE OF CEMENT BULK HANDLING PLANT AT TRIPURA ASSET FOR A PERIOD OF 03 YEARS ONGC TRIPURA ASSET",
+      "ministry": "Ministry Of Petroleum And Natural Gas",
+      "organisation": "Oil And Natural Gas Corporation Limited",
+      "department": "Na",
+      "govt_classification": "PSU",
+      "business_section": "MRO",
+      "bid_value_inr": null,
+      "emd_amount_inr": 469000.0,
+      "evaluation_method": "Total value wise evaluation",
+      "is_qcbs_or_special": false,
+      "end_date_raw": "11-09-2026 15:00:00",
+      "status": "Disqualified",
+      "status_reason": "Score 42.9% classified as Disqualified against configured thresholds",
+      "eligibility_score": 42.9,
+      "ai_confidence": 62.0,
+      "human_review_required": false,
+      "human_review_reasons": [
+        "Undertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1787310715.pdf): Low text extraction / possibly scanned image (needs OCR review)"
+      ],
+      "scoring": {
+        "eligibility_score": 42.9,
+        "ai_confidence": 62.0,
+        "contributing_factors": [
+          "Technical Capability / Product Match passed (+15)",
+          "Required Service Activities passed (+4)"
+        ],
+        "reducing_factors": [
+          "Company Turnover needs review (uncertain, +5 only)",
+          "Years of Past Experience needs review (uncertain, +6 only)",
+          "Required Supporting Documents needs review (uncertain, +2 only)",
+          "Additional ATC / Linked-Document Conditions needs review (uncertain, +1 only)"
+        ],
+        "blocking_conditions_failed": [],
+        "has_blocking_failure": false,
+        "classification_basis": "weighted_requirement_score"
+      },
+      "requirements": [
+        {
+          "id": "turnover",
+          "name": "Company Turnover",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No turnover clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "product_turnover",
+          "name": "Product/OEM-Specific Turnover",
+          "category": "Financial",
+          "required_value": "Not required",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No product-specific turnover clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "experience",
+          "name": "Years of Past Experience",
+          "category": "Experience",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No experience clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "technical_specification",
+          "name": "Technical Capability / Product Match",
+          "category": "Technical",
+          "required_value": "Technical Specifications / Specification / Values / Core Description /Nomenclature of Service HIRING OF SERVICES FOR OPERATIONS AND MAINTENANCE OF...",
+          "status": "Passed",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document / Technical Spec",
+          "evidence_snippet": "spare, maintenance, repair",
+          "notes": "Matched section keywords: spare, maintenance, repair",
+          "color": "green"
+        },
+        {
+          "id": "net_worth",
+          "name": "Net Worth",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No net worth clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_count",
+          "name": "Number of Completed Orders",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No explicit order-count clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_value",
+          "name": "Order Quantity / Project Value (Past Performance)",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "service_activities",
+          "name": "Required Service Activities",
+          "category": "Scope",
+          "required_value": "Supply, Installation, Testing, Operation & Maintenance",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document / Scope of Work",
+          "evidence_snippet": "Supply, Installation, Testing, Operation & Maintenance",
+          "notes": "",
+          "color": "green"
+        },
+        {
+          "id": "mandatory_documents",
+          "name": "Required Supporting Documents",
+          "category": "Compliance",
+          "required_value": "7 document(s): Experience Criteria,Certificate (Requested in ATC),Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC),Additional Doc 3 (Requested in ATC),Additional...",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "Experience Criteria,Certificate (Requested in ATC),Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC),Additional Doc 3 (Requested in ATC),Additional Doc 4 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting documents to prove his eligibility for exemption must be uploaded for evaluation by the buyer",
+          "notes": "Confirm each listed document is on file before submission",
+          "color": "amber"
+        },
+        {
+          "id": "atc_conditions",
+          "name": "Additional ATC / Linked-Document Conditions",
+          "category": "Compliance",
+          "required_value": "MSE reserved, Local content / Make-in-India, Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "ATC / Buyer Added Bid Specific Terms",
+          "evidence_snippet": "MSE reserved, Local content / Make-in-India, Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "notes": "",
+          "color": "amber"
+        }
+      ],
+      "documents": {
+        "main_document_quality_warnings": [
+          "HTTP 200",
+          "Low text extraction / possibly scanned image (needs OCR review)",
+          "No parser available for type: Unknown"
+        ],
+        "linked_documents_found": 11,
+        "linked_documents_processed": 7,
+        "linked_documents_failed": 2,
+        "regional_language_detected": [],
+        "children": [
+          {
+            "name": "Document (Bid Summary Omp)",
+            "url": "https://bidplus.gem.gov.in/bidding/downloadOmppdfile/",
+            "type": "Unknown",
+            "status": "failed_download",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "HTTP 200"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "PRICE FORMAT (1787310507.xlsx)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/excel/bid-9788269/1787310507.xlsx",
+            "type": "Excel",
+            "status": "processed",
+            "char_count": 2689,
+            "page_count": 1,
+            "warnings": [],
+            "requirements_found": [
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "// /Additional Qualification/Data Required Instruction To Bidder (1787310631.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787310631.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 22370,
+            "page_count": 15,
+            "warnings": [],
+            "requirements_found": [
+              "Experience / PQC clause",
+              "Payment terms",
+              "Penalty / LD clause",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Payment Terms (1787310646.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787310646.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 2719,
+            "page_count": 2,
+            "warnings": [],
+            "requirements_found": [
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "GEM Availability Report ( GAR) (1787310706.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787310706.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 1218,
+            "page_count": 1,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "Undertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1787310715.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787310715.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 0,
+            "page_count": 1,
+            "warnings": [
+              "Low text extraction / possibly scanned image (needs OCR review)"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Scope of Work (1787314863.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787314863.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 76568,
+            "page_count": 37,
+            "warnings": [],
+            "requirements_found": [
+              "Experience / PQC clause",
+              "Payment terms",
+              "Penalty / LD clause",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Project Experience and Qualifying Criteria Requirement (1787314877.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787314877.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 37906,
+            "page_count": 23,
+            "warnings": [],
+            "requirements_found": [
+              "Experience / PQC clause",
+              "Mandatory certification",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Document (Atc Pqc Document)",
+            "url": "https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Aug/GEM_2026_B_7945842/CLM0010/ATC_f7d93cf3-f32d-46b6-83401787316084300_buyercon_st138330.docx",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          }
+        ]
+      },
+      "technical_spec_links": "Document (Bid Summary Omp) : https://bidplus.gem.gov.in/bidding/downloadOmppdfile/;\nPRICE FORMAT (1787310507.xlsx) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/excel/bid-9788269/1787310507.xlsx;\n// /Additional Qualification/Data Required Instruction To Bidder (1787310631.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787310631.pdf;\nPayment Terms (1787310646.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787310646.pdf;\nGEM Availability Report ( GAR) (1787310706.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787310706.pdf;\nUndertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1787310715.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787310715.pdf;\nScope of Work (1787314863.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787314863.pdf;\nProject Experience and Qualifying Criteria Requirement (1787314877.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9788269/1787314877.pdf;\nDocument (Atc Pqc Document) : https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Aug/GEM_2026_B_7945842/CLM0010/ATC_f7d93cf3-f32d-46b6-83401787316084300_buyercon_st138330.docx;\nDocument (General Terms Conditions) : https://admin.gem.gov.in/apis/v1/gtc/pdfByDate/?date=20260821;\nDocument (Sla Bid Document) : https://bidplus.gem.gov.in/bidding/bid/bidsla/95810210016361",
+      "human_review": {
+        "resolved": false,
+        "final_status": null,
+        "reviewer_comment": "",
+        "override_reason": ""
+      }
+    },
+    {
+      "bid_number": "GEM/2026/B/7881406",
+      "bid_doc_url": "https://bidplus.gem.gov.in/showbidDocument/9714589",
+      "item_category": "Custom Bid for Services - AMC for maintenance of OPGW and associated hardware",
+      "ministry": "Ministry Of Power",
+      "organisation": "Power Grid Corporation Of India Limited",
+      "department": "Power Grid Corporation Of India Limited",
+      "govt_classification": "PSU",
+      "business_section": "IT Electronics",
+      "bid_value_inr": 33883700.0,
+      "emd_amount_inr": 678000.0,
+      "evaluation_method": "Total value wise evaluation",
+      "is_qcbs_or_special": false,
+      "end_date_raw": "11-09-2026 19:00:00",
+      "status": "Disqualified",
+      "status_reason": "Score 42.9% classified as Disqualified against configured thresholds",
+      "eligibility_score": 42.9,
+      "ai_confidence": 38.0,
+      "human_review_required": false,
+      "human_review_reasons": [
+        "// /Additional Qualification/Data Required GEM Availability Report ( GAR) (1785935873.pdf): Low text extraction / possibly scanned image (needs OCR review)",
+        "Undertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1785935879.pdf): Low text extraction / possibly scanned image (needs OCR review)",
+        "Project Experience and Qualifying Criteria Requirement (1786692249.pdf): Low text extraction / possibly scanned image (needs OCR review)",
+        "Scope of Work (1787221237.pdf): Low text extraction / possibly scanned image (needs OCR review)"
+      ],
+      "scoring": {
+        "eligibility_score": 42.9,
+        "ai_confidence": 38.0,
+        "contributing_factors": [
+          "Technical Capability / Product Match passed (+15)",
+          "Required Service Activities passed (+4)"
+        ],
+        "reducing_factors": [
+          "Company Turnover needs review (uncertain, +5 only)",
+          "Years of Past Experience needs review (uncertain, +6 only)",
+          "Required Supporting Documents needs review (uncertain, +2 only)",
+          "Additional ATC / Linked-Document Conditions needs review (uncertain, +1 only)"
+        ],
+        "blocking_conditions_failed": [],
+        "has_blocking_failure": false,
+        "classification_basis": "weighted_requirement_score"
+      },
+      "requirements": [
+        {
+          "id": "turnover",
+          "name": "Company Turnover",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No turnover clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "product_turnover",
+          "name": "Product/OEM-Specific Turnover",
+          "category": "Financial",
+          "required_value": "Not required",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No product-specific turnover clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "experience",
+          "name": "Years of Past Experience",
+          "category": "Experience",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No experience clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "technical_specification",
+          "name": "Technical Capability / Product Match",
+          "category": "Technical",
+          "required_value": "Technical Specifications / Specification / Values / Core Description /Nomenclature of Service Proposed for procurement AMC for maintenance of OPGW...",
+          "status": "Passed",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document / Technical Spec",
+          "evidence_snippet": "network, hardware",
+          "notes": "Matched section keywords: network, hardware",
+          "color": "green"
+        },
+        {
+          "id": "net_worth",
+          "name": "Net Worth",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No net worth clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_count",
+          "name": "Number of Completed Orders",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No explicit order-count clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_value",
+          "name": "Order Quantity / Project Value (Past Performance)",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "service_activities",
+          "name": "Required Service Activities",
+          "category": "Scope",
+          "required_value": "Installation, Testing, After-sales / Warranty Service",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document / Scope of Work",
+          "evidence_snippet": "Installation, Testing, After-sales / Warranty Service",
+          "notes": "",
+          "color": "green"
+        },
+        {
+          "id": "mandatory_documents",
+          "name": "Required Supporting Documents",
+          "category": "Compliance",
+          "required_value": "3 document(s): Certificate (Requested in ATC),Additional Doc 1 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover...",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "Certificate (Requested in ATC),Additional Doc 1 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting documents to prove his eligibility for exemption must be uploaded for evaluation by the buyer",
+          "notes": "Confirm each listed document is on file before submission",
+          "color": "amber"
+        },
+        {
+          "id": "atc_conditions",
+          "name": "Additional ATC / Linked-Document Conditions",
+          "category": "Compliance",
+          "required_value": "Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "ATC / Buyer Added Bid Specific Terms",
+          "evidence_snippet": "Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "notes": "",
+          "color": "amber"
+        }
+      ],
+      "documents": {
+        "main_document_quality_warnings": [
+          "HTTP 200",
+          "Low text extraction / possibly scanned image (needs OCR review)",
+          "Low text extraction / possibly scanned image (needs OCR review)",
+          "Low text extraction / possibly scanned image (needs OCR review)",
+          "Low text extraction / possibly scanned image (needs OCR review)",
+          "No parser available for type: Unknown"
+        ],
+        "linked_documents_found": 11,
+        "linked_documents_processed": 7,
+        "linked_documents_failed": 2,
+        "regional_language_detected": [],
+        "children": [
+          {
+            "name": "Document (Bid Summary Omp)",
+            "url": "https://bidplus.gem.gov.in/bidding/downloadOmppdfile/",
+            "type": "Unknown",
+            "status": "failed_download",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "HTTP 200"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "BOQ (1787135529.xlsx)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/excel/bid-9714589/1787135529.xlsx",
+            "type": "Excel",
+            "status": "processed",
+            "char_count": 2810,
+            "page_count": 1,
+            "warnings": [],
+            "requirements_found": [
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "// /Additional Qualification/Data Required GEM Availability Report ( GAR) (1785935873.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1785935873.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 2,
+            "page_count": 3,
+            "warnings": [
+              "Low text extraction / possibly scanned image (needs OCR review)"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Undertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1785935879.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1785935879.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 2,
+            "page_count": 3,
+            "warnings": [
+              "Low text extraction / possibly scanned image (needs OCR review)"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Project Experience and Qualifying Criteria Requirement (1786692249.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1786692249.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 1,
+            "page_count": 2,
+            "warnings": [
+              "Low text extraction / possibly scanned image (needs OCR review)"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Scope of Work (1787221237.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1787221237.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 14,
+            "page_count": 15,
+            "warnings": [
+              "Low text extraction / possibly scanned image (needs OCR review)"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Payment Terms (1787221846.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1787221846.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 48832,
+            "page_count": 19,
+            "warnings": [],
+            "requirements_found": [
+              "Penalty / LD clause",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Any other Documents As per Specific Requirement of Buyer -1 (1787221923.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1787221923.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 48832,
+            "page_count": 19,
+            "warnings": [],
+            "requirements_found": [
+              "Penalty / LD clause",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Document (Atc Pqc Document)",
+            "url": "https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Aug/GEM_2026_B_7881406/CLM0010/buyer_ATC_7eea7b48-dea7-4726-890a1785936954341_buyernagpur2.doc",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          }
+        ]
+      },
+      "technical_spec_links": "Document (Bid Summary Omp) : https://bidplus.gem.gov.in/bidding/downloadOmppdfile/;\nBOQ (1787135529.xlsx) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/excel/bid-9714589/1787135529.xlsx;\n// /Additional Qualification/Data Required GEM Availability Report ( GAR) (1785935873.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1785935873.pdf;\nUndertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1785935879.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1785935879.pdf;\nProject Experience and Qualifying Criteria Requirement (1786692249.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1786692249.pdf;\nScope of Work (1787221237.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1787221237.pdf;\nPayment Terms (1787221846.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1787221846.pdf;\nAny other Documents As per Specific Requirement of Buyer -1 (1787221923.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9714589/1787221923.pdf;\nDocument (Atc Pqc Document) : https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Aug/GEM_2026_B_7881406/CLM0010/buyer_ATC_7eea7b48-dea7-4726-890a1785936954341_buyernagpur2.doc;\nDocument (General Terms Conditions) : https://admin.gem.gov.in/apis/v1/gtc/pdfByDate/?date=20260821;\nDocument (Sla Bid Document) : https://bidplus.gem.gov.in/bidding/bid/bidsla/94373239438921",
+      "human_review": {
+        "resolved": false,
+        "final_status": null,
+        "reviewer_comment": "",
+        "override_reason": ""
+      }
+    },
+    {
+      "bid_number": "GEM/2026/B/7943336",
+      "bid_doc_url": "https://bidplus.gem.gov.in/showbidDocument/9785396",
+      "item_category": "Carbendazim 12 plus Mancozeb 63 WP , 2 4 D Amine Salt 58 SL , Acephate 75 SP , Chlorpyrifos 50 plus Cypermethrin 5 EC , Chlorpyrifos 50 EC , Cypermethrin 25 EC , Emamectin Benzoate 5 SG , Glyphosate 41 SL , Hexaconazole 5 SC , Novaluron 5.25 plus Emamectin Benzoate 0.9 SC , Paraquat Dichloride 24 SL , Profenofos 40 plus Cypermethrin 4 EC , Sulphur 80 WDG",
+      "ministry": "Ministry Of Chemicals And Fertilizers",
+      "organisation": "National Fertilizers Limited (nfl)",
+      "department": "Department Of Fertilizers",
+      "govt_classification": "PSU",
+      "business_section": "Unclassified",
+      "bid_value_inr": null,
+      "emd_amount_inr": 7693.0,
+      "evaluation_method": "Item wise evaluation",
+      "is_qcbs_or_special": false,
+      "end_date_raw": "31-08-2026 21:00:00",
+      "status": "Disqualified",
+      "status_reason": "Score 31.2% classified as Disqualified against configured thresholds",
+      "eligibility_score": 31.2,
+      "ai_confidence": 67.0,
+      "human_review_required": false,
+      "human_review_reasons": [],
+      "scoring": {
+        "eligibility_score": 31.2,
+        "ai_confidence": 67.0,
+        "contributing_factors": [
+          "Required Service Activities passed (+4)"
+        ],
+        "reducing_factors": [
+          "Company Turnover needs review (uncertain, +5 only)",
+          "Years of Past Experience needs review (uncertain, +6 only)",
+          "Technical Capability / Product Match needs review (uncertain, +6 only)",
+          "Required Supporting Documents needs review (uncertain, +2 only)",
+          "Additional ATC / Linked-Document Conditions needs review (uncertain, +1 only)"
+        ],
+        "blocking_conditions_failed": [],
+        "has_blocking_failure": false,
+        "classification_basis": "weighted_requirement_score"
+      },
+      "requirements": [
+        {
+          "id": "turnover",
+          "name": "Company Turnover",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No turnover clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "product_turnover",
+          "name": "Product/OEM-Specific Turnover",
+          "category": "Financial",
+          "required_value": "Not required",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No product-specific turnover clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "experience",
+          "name": "Years of Past Experience",
+          "category": "Experience",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No experience clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "technical_specification",
+          "name": "Technical Capability / Product Match",
+          "category": "Technical",
+          "required_value": "Technical Specifications Specification Document View File BOQ Detail Document View File Advisory-Please refer attached BOQ document for detailed consignee list...",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document / Technical Spec",
+          "evidence_snippet": "Technical Specifications Specification Document View File BOQ Detail Document View File Advisory-Please refer attached BOQ document for detailed consignee list...",
+          "notes": "Product/service equivalence could not be confidently matched to ProcMart catalog",
+          "color": "amber"
+        },
+        {
+          "id": "net_worth",
+          "name": "Net Worth",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No net worth clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_count",
+          "name": "Number of Completed Orders",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No explicit order-count clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_value",
+          "name": "Order Quantity / Project Value (Past Performance)",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "service_activities",
+          "name": "Required Service Activities",
+          "category": "Scope",
+          "required_value": "Supply, Testing",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document / Scope of Work",
+          "evidence_snippet": "Supply, Testing",
+          "notes": "",
+          "color": "green"
+        },
+        {
+          "id": "mandatory_documents",
+          "name": "Required Supporting Documents",
+          "category": "Compliance",
+          "required_value": "2 document(s): Additional Doc 1 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting...",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "Additional Doc 1 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting documents to prove his eligibility for exemption must be uploaded for evaluation by the buyer",
+          "notes": "Confirm each listed document is on file before submission",
+          "color": "amber"
+        },
+        {
+          "id": "atc_conditions",
+          "name": "Additional ATC / Linked-Document Conditions",
+          "category": "Compliance",
+          "required_value": "Local content / Make-in-India, Land-border restriction, Integrity Pact mandatory, Sample / trial required, Inspection required",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "ATC / Buyer Added Bid Specific Terms",
+          "evidence_snippet": "Local content / Make-in-India, Land-border restriction, Integrity Pact mandatory, Sample / trial required, Inspection required",
+          "notes": "",
+          "color": "amber"
+        }
+      ],
+      "documents": {
+        "main_document_quality_warnings": [
+          "HTTP 200",
+          "No parser available for type: Unknown"
+        ],
+        "linked_documents_found": 5,
+        "linked_documents_processed": 2,
+        "linked_documents_failed": 2,
+        "regional_language_detected": [],
+        "children": [
+          {
+            "name": "Document (Bid Summary Omp)",
+            "url": "https://bidplus.gem.gov.in/bidding/downloadOmppdfile/",
+            "type": "Unknown",
+            "status": "failed_download",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "HTTP 200"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Boq Document)",
+            "url": "https://mkp.gem.gov.in/uploaded_documents/51/16/877/OrderItem/BoqDocument/2026/8/20/tenderdoc_2026-08-20-17-12-42_7cf7e8064bc6bc2f4569a0cdd7e63a87.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 84060,
+            "page_count": 46,
+            "warnings": [],
+            "requirements_found": [
+              "Turnover clause",
+              "Penalty / LD clause",
+              "Mandatory certification",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Document (Boq Line Items Csv)",
+            "url": "https://mkp.gem.gov.in/uploaded_documents/51/16/877/OrderItem/BoqLineItemsDocument/2026/8/20/boq_item_sample_file_2026-08-20-17-12-42_2c11cf2e3102c927d502e69bca92c73a.csv",
+            "type": "CSV",
+            "status": "processed",
+            "char_count": 1144,
+            "page_count": 0,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Other)",
+            "url": "https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Aug/GEM_2026_B_7943336/CLM0010/TenderDoc_d468a436-f34e-4b95-b0151787240623679_mktgd06.sec.pdf",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          }
+        ]
+      },
+      "technical_spec_links": "Document (Bid Summary Omp) : https://bidplus.gem.gov.in/bidding/downloadOmppdfile/;\nDocument (Boq Document) : https://mkp.gem.gov.in/uploaded_documents/51/16/877/OrderItem/BoqDocument/2026/8/20/tenderdoc_2026-08-20-17-12-42_7cf7e8064bc6bc2f4569a0cdd7e63a87.pdf;\nDocument (Boq Line Items Csv) : https://mkp.gem.gov.in/uploaded_documents/51/16/877/OrderItem/BoqLineItemsDocument/2026/8/20/boq_item_sample_file_2026-08-20-17-12-42_2c11cf2e3102c927d502e69bca92c73a.csv;\nDocument (Other) : https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Aug/GEM_2026_B_7943336/CLM0010/TenderDoc_d468a436-f34e-4b95-b0151787240623679_mktgd06.sec.pdf;\nDocument (General Terms Conditions) : https://admin.gem.gov.in/apis/v1/gtc/pdfByDate/?date=20260821",
+      "human_review": {
+        "resolved": false,
+        "final_status": null,
+        "reviewer_comment": "",
+        "override_reason": ""
+      }
+    },
+    {
+      "bid_number": "GEM/2026/B/7947909",
+      "bid_doc_url": "https://bidplus.gem.gov.in/showbidDocument/9790604",
+      "item_category": "Security Manpower Service (Version 2.0) - Hotel, Banks; Armed Security Guard , Security Manpower Service (Version 2.0) - Hotel, Banks; Unarmed Security Guard",
+      "ministry": "Ministry Of Finance",
+      "organisation": "Union Bank Of India (ubi)",
+      "department": "Department Of Financial Services",
+      "govt_classification": "PSU",
+      "business_section": "Unclassified",
+      "bid_value_inr": 23749609.0,
+      "emd_amount_inr": 440000.0,
+      "evaluation_method": "Total value wise evaluation",
+      "is_qcbs_or_special": false,
+      "end_date_raw": "02-09-2026 19:00:00",
+      "status": "Pending Human Review",
+      "status_reason": "Score 52.2% (Segment Two - Low Match); Document quality warning(s) present",
+      "eligibility_score": 52.2,
+      "ai_confidence": 45.0,
+      "human_review_required": true,
+      "human_review_reasons": [],
+      "scoring": {
+        "eligibility_score": 52.2,
+        "ai_confidence": 45.0,
+        "contributing_factors": [
+          "Company Turnover passed (+12)",
+          "Years of Past Experience passed (+15)",
+          "Required Service Activities passed (+4)"
+        ],
+        "reducing_factors": [
+          "Technical Capability / Product Match needs review (uncertain, +6 only)",
+          "Required Supporting Documents needs review (uncertain, +2 only)",
+          "Additional ATC / Linked-Document Conditions needs review (uncertain, +1 only)"
+        ],
+        "blocking_conditions_failed": [],
+        "has_blocking_failure": false,
+        "classification_basis": "weighted_requirement_score"
+      },
+      "requirements": [
+        {
+          "id": "turnover",
+          "name": "Company Turnover",
+          "category": "Financial",
+          "required_value": "INR 88,000,000",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "880 Lakh (s)",
+          "notes": "ProcMart turnover on record: INR 250,000,000",
+          "color": "green"
+        },
+        {
+          "id": "product_turnover",
+          "name": "Product/OEM-Specific Turnover",
+          "category": "Financial",
+          "required_value": "Not required",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No product-specific turnover clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "experience",
+          "name": "Years of Past Experience",
+          "category": "Experience",
+          "required_value": "5 year(s)",
+          "status": "Passed",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "5 Year (s)",
+          "notes": "ProcMart operating history: 9 year(s)",
+          "color": "green"
+        },
+        {
+          "id": "technical_specification",
+          "name": "Technical Capability / Product Match",
+          "category": "Technical",
+          "required_value": "technical specifications. The bidder seeking Relaxation from Experience Criteria, shall upload the supporting documents to prove his eligibility for Relaxation....",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document / Technical Spec",
+          "evidence_snippet": "technical specifications. The bidder seeking Relaxation from Experience Criteria, shall upload the supporting documents to prove his eligibility for Relaxation....",
+          "notes": "Product/service equivalence could not be confidently matched to ProcMart catalog",
+          "color": "amber"
+        },
+        {
+          "id": "net_worth",
+          "name": "Net Worth",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No net worth clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_count",
+          "name": "Number of Completed Orders",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No explicit order-count clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_value",
+          "name": "Order Quantity / Project Value (Past Performance)",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "service_activities",
+          "name": "Required Service Activities",
+          "category": "Scope",
+          "required_value": "Supply",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document / Scope of Work",
+          "evidence_snippet": "Supply",
+          "notes": "",
+          "color": "green"
+        },
+        {
+          "id": "mandatory_documents",
+          "name": "Required Supporting Documents",
+          "category": "Compliance",
+          "required_value": "7 document(s): Experience Criteria,Bidder Turnover,Certificate (Requested in ATC),Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC),Additional Doc 3 (Requested in...",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "Experience Criteria,Bidder Turnover,Certificate (Requested in ATC),Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC),Additional Doc 3 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting documents to prove his eligibility for exemption must be uploaded for evaluation by the buyer",
+          "notes": "Confirm each listed document is on file before submission",
+          "color": "amber"
+        },
+        {
+          "id": "atc_conditions",
+          "name": "Additional ATC / Linked-Document Conditions",
+          "category": "Compliance",
+          "required_value": "Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "ATC / Buyer Added Bid Specific Terms",
+          "evidence_snippet": "Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "notes": "",
+          "color": "amber"
+        }
+      ],
+      "documents": {
+        "main_document_quality_warnings": [
+          "HTTP 200",
+          "No parser available for type: Unknown",
+          "No parser available for type: Unknown",
+          "No parser available for type: Unknown",
+          "No parser available for type: Unknown",
+          "No parser available for type: Unknown",
+          "No parser available for type: Unknown",
+          "No parser available for type: Unknown",
+          "No parser available for type: Unknown"
+        ],
+        "linked_documents_found": 13,
+        "linked_documents_processed": 2,
+        "linked_documents_failed": 9,
+        "regional_language_detected": [],
+        "children": [
+          {
+            "name": "Document (Bid Summary Omp)",
+            "url": "https://bidplus.gem.gov.in/bidding/downloadOmppdfile/",
+            "type": "Unknown",
+            "status": "failed_download",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "HTTP 200"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Financial Bid (1787312639.xlsx)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/excel/bid-9790604/1787312639.xlsx",
+            "type": "Excel",
+            "status": "processed",
+            "char_count": 859,
+            "page_count": 1,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "As mentioned on ATC Buyer to upload Gazette notification for the breakup of ESI/EPF/ELDI etc if required (1787312699.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9790604/1787312699.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 18450,
+            "page_count": 15,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Buyer Additional Doc)",
+            "url": "https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873132946089.pdf/9790604",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Buyer Additional Doc)",
+            "url": "https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157776942.pdf/9790604",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Buyer Additional Doc)",
+            "url": "https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157777066.pdf/9790604",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Buyer Additional Doc)",
+            "url": "https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157777148.pdf/9790604",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Buyer Additional Doc)",
+            "url": "https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157777221.pdf/9790604",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Buyer Additional Doc)",
+            "url": "https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157777299.pdf/9790604",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Buyer Additional Doc)",
+            "url": "https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157777373.pdf/9790604",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Atc Pqc Document)",
+            "url": "https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Aug/GEM_2026_B_7947909/CLM0010/ATCJ_7aa37dec-f097-4771-a12c1787313452041_RO_REWA_BUYER7.pdf",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          }
+        ]
+      },
+      "technical_spec_links": "Document (Bid Summary Omp) : https://bidplus.gem.gov.in/bidding/downloadOmppdfile/;\nFinancial Bid (1787312639.xlsx) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/excel/bid-9790604/1787312639.xlsx;\nAs mentioned on ATC Buyer to upload Gazette notification for the breakup of ESI/EPF/ELDI etc if required (1787312699.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9790604/1787312699.pdf;\nDocument (Buyer Additional Doc) : https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873132946089.pdf/9790604;\nDocument (Buyer Additional Doc) : https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157776942.pdf/9790604;\nDocument (Buyer Additional Doc) : https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157777066.pdf/9790604;\nDocument (Buyer Additional Doc) : https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157777148.pdf/9790604;\nDocument (Buyer Additional Doc) : https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157777221.pdf/9790604;\nDocument (Buyer Additional Doc) : https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157777299.pdf/9790604;\nDocument (Buyer Additional Doc) : https://bidplus.gem.gov.in/bidding/bid/downloadBuyerTechDoc/9790604-17873157777373.pdf/9790604;\nDocument (Atc Pqc Document) : https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Aug/GEM_2026_B_7947909/CLM0010/ATCJ_7aa37dec-f097-4771-a12c1787313452041_RO_REWA_BUYER7.pdf;\nDocument (General Terms Conditions) : https://admin.gem.gov.in/apis/v1/gtc/pdfByDate/?date=20260821;\nDocument (Sla Bid Document) : https://bidplus.gem.gov.in/bidding/bid/bidsla/95855926684816",
+      "human_review": {
+        "resolved": false,
+        "final_status": null,
+        "reviewer_comment": "",
+        "override_reason": ""
+      }
+    },
+    {
+      "bid_number": "GEM/2026/B/7943340",
+      "bid_doc_url": "https://bidplus.gem.gov.in/showbidDocument/9785400",
+      "item_category": "Repair and Overhauling Service - REPAIR RATE CONTRACT FOR OFFLOADING OF REPAIR AND REFIT IN SHIPS/ MARINE ASSETS INCLUDING DRYDOCK AND MACHINERY/ EQUIPMENT; ANY OTHER SUITABLE BRAND; No; Buyer Premises, Service Provider Premises",
+      "ministry": "Ministry Of Defence",
+      "organisation": "Indian Navy",
+      "department": "Department Of Military Affairs",
+      "govt_classification": "Central",
+      "business_section": "MRO",
+      "bid_value_inr": null,
+      "emd_amount_inr": null,
+      "evaluation_method": "Total value wise evaluation",
+      "is_qcbs_or_special": false,
+      "end_date_raw": "04-09-2026 09:00:00",
+      "status": "Pending Human Review",
+      "status_reason": "Score 50.6% (Segment Two - Low Match); Document quality warning(s) present",
+      "eligibility_score": 50.6,
+      "ai_confidence": 74.0,
+      "human_review_required": true,
+      "human_review_reasons": [],
+      "scoring": {
+        "eligibility_score": 50.6,
+        "ai_confidence": 74.0,
+        "contributing_factors": [
+          "Technical Capability / Product Match passed (+15)",
+          "Net Worth passed (+8)",
+          "Required Service Activities passed (+4)"
+        ],
+        "reducing_factors": [
+          "Company Turnover needs review (uncertain, +5 only)",
+          "Years of Past Experience needs review (uncertain, +6 only)",
+          "Required Supporting Documents needs review (uncertain, +2 only)",
+          "Additional ATC / Linked-Document Conditions needs review (uncertain, +1 only)"
+        ],
+        "blocking_conditions_failed": [],
+        "has_blocking_failure": false,
+        "classification_basis": "weighted_requirement_score"
+      },
+      "requirements": [
+        {
+          "id": "turnover",
+          "name": "Company Turnover",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No turnover clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "product_turnover",
+          "name": "Product/OEM-Specific Turnover",
+          "category": "Financial",
+          "required_value": "Not required",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No product-specific turnover clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "experience",
+          "name": "Years of Past Experience",
+          "category": "Experience",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No experience clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "technical_specification",
+          "name": "Technical Capability / Product Match",
+          "category": "Technical",
+          "required_value": "Technical Specifications / / Values Specification / Core REPAIR RATE CONTRACT FOR OFFLOADING OF REPAIR AND REFIT IN SHIPS/ MARINE...",
+          "status": "Passed",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document / Technical Spec",
+          "evidence_snippet": "spare, bucket, maintenance, repair",
+          "notes": "Matched section keywords: spare, bucket, maintenance, repair",
+          "color": "green"
+        },
+        {
+          "id": "net_worth",
+          "name": "Net Worth",
+          "category": "Financial",
+          "required_value": "net worth of the Bidder firm (manufacturer or principal of authorised representative) on ‘The Relevant Date’ should not be less...",
+          "status": "Passed",
+          "mandatory": true,
+          "evidence_doc": "ATC / Buyer Added Terms",
+          "evidence_snippet": "net worth of the Bidder firm (manufacturer or principal of authorised representative) on ‘The Relevant Date’ should not be less...",
+          "notes": "ProcMart net worth on record: INR 80,000,000",
+          "color": "green"
+        },
+        {
+          "id": "order_count",
+          "name": "Number of Completed Orders",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No explicit order-count clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_value",
+          "name": "Order Quantity / Project Value (Past Performance)",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "service_activities",
+          "name": "Required Service Activities",
+          "category": "Scope",
+          "required_value": "Supply, Installation, Testing, Commissioning, After-sales / Warranty Service",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document / Scope of Work",
+          "evidence_snippet": "Supply, Installation, Testing, Commissioning, After-sales / Warranty Service",
+          "notes": "",
+          "color": "green"
+        },
+        {
+          "id": "mandatory_documents",
+          "name": "Required Supporting Documents",
+          "category": "Compliance",
+          "required_value": "2 document(s): Additional Doc 1 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting...",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "Additional Doc 1 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting documents to prove his eligibility for exemption must be uploaded for evaluation by the buyer",
+          "notes": "Confirm each listed document is on file before submission",
+          "color": "amber"
+        },
+        {
+          "id": "atc_conditions",
+          "name": "Additional ATC / Linked-Document Conditions",
+          "category": "Compliance",
+          "required_value": "Local content / Make-in-India, Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "ATC / Buyer Added Bid Specific Terms",
+          "evidence_snippet": "Local content / Make-in-India, Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "notes": "",
+          "color": "amber"
+        }
+      ],
+      "documents": {
+        "main_document_quality_warnings": [
+          "HTTP 200"
+        ],
+        "linked_documents_found": 7,
+        "linked_documents_processed": 4,
+        "linked_documents_failed": 1,
+        "regional_language_detected": [],
+        "children": [
+          {
+            "name": "Document (Bid Summary Omp)",
+            "url": "https://bidplus.gem.gov.in/bidding/downloadOmppdfile/",
+            "type": "Unknown",
+            "status": "failed_download",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "HTTP 200"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "PRICE BID OR BOQ (1787226309.xlsx)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/excel/bid-9785400/1787226309.xlsx",
+            "type": "Excel",
+            "status": "processed",
+            "char_count": 66794,
+            "page_count": 2,
+            "warnings": [],
+            "requirements_found": [
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "// /Additional Qualification/Data Required Product Details (1787315544.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9785400/1787315544.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 178857,
+            "page_count": 55,
+            "warnings": [],
+            "requirements_found": [
+              "Turnover clause",
+              "Experience / PQC clause",
+              "Net worth clause",
+              "Payment terms",
+              "Penalty / LD clause",
+              "Mandatory certification",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Scope of Work (1787315548.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9785400/1787315548.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 178857,
+            "page_count": 55,
+            "warnings": [],
+            "requirements_found": [
+              "Turnover clause",
+              "Experience / PQC clause",
+              "Net worth clause",
+              "Payment terms",
+              "Penalty / LD clause",
+              "Mandatory certification",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Terms and Conditions pertaining to the Bid/Contract (1787226332.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9785400/1787226332.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 1221,
+            "page_count": 11,
+            "warnings": [],
+            "requirements_found": []
+          }
+        ]
+      },
+      "technical_spec_links": "Document (Bid Summary Omp) : https://bidplus.gem.gov.in/bidding/downloadOmppdfile/;\nPRICE BID OR BOQ (1787226309.xlsx) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/excel/bid-9785400/1787226309.xlsx;\n// /Additional Qualification/Data Required Product Details (1787315544.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9785400/1787315544.pdf;\nScope of Work (1787315548.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9785400/1787315548.pdf;\nTerms and Conditions pertaining to the Bid/Contract (1787226332.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9785400/1787226332.pdf;\nDocument (General Terms Conditions) : https://admin.gem.gov.in/apis/v1/gtc/pdfByDate/?date=20260821;\nDocument (Sla Bid Document) : https://bidplus.gem.gov.in/bidding/bid/bidsla/95754053160000",
+      "human_review": {
+        "resolved": false,
+        "final_status": null,
+        "reviewer_comment": "",
+        "override_reason": ""
+      }
+    },
+    {
+      "bid_number": "GEM/2026/B/7948864",
+      "bid_doc_url": "https://bidplus.gem.gov.in/showbidDocument/9791699",
+      "item_category": "Custom Bid for Services - Upgradation and AMC of existing CISCO based Wi-Fi Set up",
+      "ministry": "Ministry Of Finance",
+      "organisation": "Bank Of Baroda",
+      "department": "Department Of Financial Services",
+      "govt_classification": "Central",
+      "business_section": "Projects",
+      "bid_value_inr": 79650000.0,
+      "emd_amount_inr": 500000.0,
+      "evaluation_method": "Total value wise evaluation",
+      "is_qcbs_or_special": false,
+      "end_date_raw": "11-09-2026 15:00:00",
+      "status": "Pending Human Review",
+      "status_reason": "Score 63.9% (Segment Two - Low Match); Document quality warning(s) present",
+      "eligibility_score": 63.9,
+      "ai_confidence": 68.0,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "Undertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1787314824.pdf): Low text extraction / possibly scanned image (needs OCR review)"
+      ],
+      "scoring": {
+        "eligibility_score": 63.9,
+        "ai_confidence": 68.0,
+        "contributing_factors": [
+          "Company Turnover passed (+12)",
+          "Years of Past Experience passed (+15)",
+          "Technical Capability / Product Match passed (+15)",
+          "Required Service Activities passed (+4)"
+        ],
+        "reducing_factors": [
+          "Required Supporting Documents needs review (uncertain, +2 only)",
+          "Additional ATC / Linked-Document Conditions needs review (uncertain, +1 only)"
+        ],
+        "blocking_conditions_failed": [],
+        "has_blocking_failure": false,
+        "classification_basis": "weighted_requirement_score"
+      },
+      "requirements": [
+        {
+          "id": "turnover",
+          "name": "Company Turnover",
+          "category": "Financial",
+          "required_value": "INR 20,200,000",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "202 Lakh (s)",
+          "notes": "ProcMart turnover on record: INR 250,000,000",
+          "color": "green"
+        },
+        {
+          "id": "product_turnover",
+          "name": "Product/OEM-Specific Turnover",
+          "category": "Financial",
+          "required_value": "Not required",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No product-specific turnover clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "experience",
+          "name": "Years of Past Experience",
+          "category": "Experience",
+          "required_value": "5 year(s)",
+          "status": "Passed",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "5 Year (s)",
+          "notes": "ProcMart operating history: 9 year(s)",
+          "color": "green"
+        },
+        {
+          "id": "technical_specification",
+          "name": "Technical Capability / Product Match",
+          "category": "Technical",
+          "required_value": "technical specifications. If the bidder itself is MSE OEM of the offered products, it would be relaxed from the \"OEM...",
+          "status": "Passed",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document / Technical Spec",
+          "evidence_snippet": "custom bid for services, amc, cmc, project",
+          "notes": "Matched section keywords: custom bid for services, amc, cmc, project",
+          "color": "green"
+        },
+        {
+          "id": "net_worth",
+          "name": "Net Worth",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No net worth clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_count",
+          "name": "Number of Completed Orders",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No explicit order-count clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_value",
+          "name": "Order Quantity / Project Value (Past Performance)",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "service_activities",
+          "name": "Required Service Activities",
+          "category": "Scope",
+          "required_value": "Supply, Installation, After-sales / Warranty Service",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document / Scope of Work",
+          "evidence_snippet": "Supply, Installation, After-sales / Warranty Service",
+          "notes": "",
+          "color": "green"
+        },
+        {
+          "id": "mandatory_documents",
+          "name": "Required Supporting Documents",
+          "category": "Compliance",
+          "required_value": "8 document(s): Experience Criteria,Bidder Turnover,Certificate (Requested in ATC),OEM Authorization Certificate,OEM Annual Turnover,Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC)...",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "Experience Criteria,Bidder Turnover,Certificate (Requested in ATC),OEM Authorization Certificate,OEM Annual Turnover,Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting documents to prove his eligibility for exemption must be uploaded for evaluation by the buyer",
+          "notes": "Confirm each listed document is on file before submission",
+          "color": "amber"
+        },
+        {
+          "id": "atc_conditions",
+          "name": "Additional ATC / Linked-Document Conditions",
+          "category": "Compliance",
+          "required_value": "OEM authorization mandatory, Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "ATC / Buyer Added Bid Specific Terms",
+          "evidence_snippet": "OEM authorization mandatory, Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "notes": "",
+          "color": "amber"
+        }
+      ],
+      "documents": {
+        "main_document_quality_warnings": [
+          "HTTP 200",
+          "Low text extraction / possibly scanned image (needs OCR review)",
+          "No parser available for type: Unknown"
+        ],
+        "linked_documents_found": 9,
+        "linked_documents_processed": 5,
+        "linked_documents_failed": 2,
+        "regional_language_detected": [],
+        "children": [
+          {
+            "name": "Document (Bid Summary Omp)",
+            "url": "https://bidplus.gem.gov.in/bidding/downloadOmppdfile/",
+            "type": "Unknown",
+            "status": "failed_download",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "HTTP 200"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Commercial Bid Format (1787314766.xlsx)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/excel/bid-9791699/1787314766.xlsx",
+            "type": "Excel",
+            "status": "processed",
+            "char_count": 4977,
+            "page_count": 1,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "// /Additional Qualification/Data Required 4 / 8 Scope of Work (1787314807.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9791699/1787314807.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 29952,
+            "page_count": 13,
+            "warnings": [],
+            "requirements_found": [
+              "Penalty / LD clause",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Payment Terms (1787314810.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9791699/1787314810.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 4481,
+            "page_count": 2,
+            "warnings": [],
+            "requirements_found": [
+              "Payment terms"
+            ]
+          },
+          {
+            "name": "GEM Availability Report ( GAR) (1787314818.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9791699/1787314818.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 2714,
+            "page_count": 1,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "Undertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1787314824.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9791699/1787314824.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 0,
+            "page_count": 1,
+            "warnings": [
+              "Low text extraction / possibly scanned image (needs OCR review)"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Atc Pqc Document)",
+            "url": "https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Aug/GEM_2026_B_7948864/CLM0010/ATC1_c10af97a-34b0-4220-80ec1787315441057_officer1.em.pdf",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          }
+        ]
+      },
+      "technical_spec_links": "Document (Bid Summary Omp) : https://bidplus.gem.gov.in/bidding/downloadOmppdfile/;\nCommercial Bid Format (1787314766.xlsx) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/excel/bid-9791699/1787314766.xlsx;\n// /Additional Qualification/Data Required 4 / 8 Scope of Work (1787314807.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9791699/1787314807.pdf;\nPayment Terms (1787314810.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9791699/1787314810.pdf;\nGEM Availability Report ( GAR) (1787314818.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9791699/1787314818.pdf;\nUndertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1787314824.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/AugQ326/bidding/biddoc/bid-9791699/1787314824.pdf;\nDocument (Atc Pqc Document) : https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Aug/GEM_2026_B_7948864/CLM0010/ATC1_c10af97a-34b0-4220-80ec1787315441057_officer1.em.pdf;\nDocument (General Terms Conditions) : https://admin.gem.gov.in/apis/v1/gtc/pdfByDate/?date=20260821;\nDocument (Sla Bid Document) : https://bidplus.gem.gov.in/bidding/bid/bidsla/95877369306601",
+      "human_review": {
+        "resolved": false,
+        "final_status": null,
+        "reviewer_comment": "",
+        "override_reason": ""
+      }
+    },
+    {
+      "bid_number": "GEM/2026/B/7819944",
+      "bid_doc_url": "https://bidplus.gem.gov.in/showbidDocument/9644400",
+      "item_category": "Custom Bid for Services - HIRING OF 25 MTR 80 Ton CRAWLER CRANE FOR VARIOUS PROJECTS IN ALL GRSE UNITS",
+      "ministry": "Ministry Of Defence",
+      "organisation": "Garden Reach Ship Builders And Engineers Limited (grse)",
+      "department": "Department Of Defence Production",
+      "govt_classification": "PSU",
+      "business_section": "Projects",
+      "bid_value_inr": null,
+      "emd_amount_inr": 900000.0,
+      "evaluation_method": "Total value wise evaluation",
+      "is_qcbs_or_special": false,
+      "end_date_raw": "12-08-2026 17:00:00",
+      "status": "Pending Human Review",
+      "status_reason": "Score 63.9% (Segment Two - Low Match); AI confidence 60.0% is in the manual-review band; Document quality warning(s) present",
+      "eligibility_score": 63.9,
+      "ai_confidence": 60.0,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "4 / 7 GEM Availability Report ( GAR) (1784715560.pdf): Low text extraction / possibly scanned image (needs OCR review)",
+        "Undertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1784715568.pdf): Low text extraction / possibly scanned image (needs OCR review)"
+      ],
+      "scoring": {
+        "eligibility_score": 63.9,
+        "ai_confidence": 60.0,
+        "contributing_factors": [
+          "Company Turnover passed (+12)",
+          "Years of Past Experience passed (+15)",
+          "Technical Capability / Product Match passed (+15)",
+          "Required Service Activities passed (+4)"
+        ],
+        "reducing_factors": [
+          "Required Supporting Documents needs review (uncertain, +2 only)",
+          "Additional ATC / Linked-Document Conditions needs review (uncertain, +1 only)"
+        ],
+        "blocking_conditions_failed": [],
+        "has_blocking_failure": false,
+        "classification_basis": "weighted_requirement_score"
+      },
+      "requirements": [
+        {
+          "id": "turnover",
+          "name": "Company Turnover",
+          "category": "Financial",
+          "required_value": "INR 13,500,000",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "135 Lakh (s)",
+          "notes": "ProcMart turnover on record: INR 250,000,000",
+          "color": "green"
+        },
+        {
+          "id": "product_turnover",
+          "name": "Product/OEM-Specific Turnover",
+          "category": "Financial",
+          "required_value": "Not required",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No product-specific turnover clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "experience",
+          "name": "Years of Past Experience",
+          "category": "Experience",
+          "required_value": "2 year(s)",
+          "status": "Passed",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "2 Year (s)",
+          "notes": "ProcMart operating history: 9 year(s)",
+          "color": "green"
+        },
+        {
+          "id": "technical_specification",
+          "name": "Technical Capability / Product Match",
+          "category": "Technical",
+          "required_value": "Technical Specifications / Specification / Values / Core Description /Nomenclature of Service Proposed for HIRING OF 25 MTR 80 Ton...",
+          "status": "Passed",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document / Technical Spec",
+          "evidence_snippet": "custom bid for services, project",
+          "notes": "Matched section keywords: custom bid for services, project",
+          "color": "green"
+        },
+        {
+          "id": "net_worth",
+          "name": "Net Worth",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No net worth clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_count",
+          "name": "Number of Completed Orders",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No explicit order-count clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_value",
+          "name": "Order Quantity / Project Value (Past Performance)",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "service_activities",
+          "name": "Required Service Activities",
+          "category": "Scope",
+          "required_value": "Supply, Installation",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document / Scope of Work",
+          "evidence_snippet": "Supply, Installation",
+          "notes": "",
+          "color": "green"
+        },
+        {
+          "id": "mandatory_documents",
+          "name": "Required Supporting Documents",
+          "category": "Compliance",
+          "required_value": "8 document(s): Experience Criteria,Bidder Turnover,Certificate (Requested in ATC),Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC),Additional Doc 3 (Requested in...",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "Experience Criteria,Bidder Turnover,Certificate (Requested in ATC),Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC),Additional Doc 3 (Requested in ATC),Additional Doc 4 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting documents to prove his eligibility for exemption must be uploaded for evaluation by the buyer",
+          "notes": "Confirm each listed document is on file before submission",
+          "color": "amber"
+        },
+        {
+          "id": "atc_conditions",
+          "name": "Additional ATC / Linked-Document Conditions",
+          "category": "Compliance",
+          "required_value": "Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "ATC / Buyer Added Bid Specific Terms",
+          "evidence_snippet": "Land-border restriction, Integrity Pact mandatory, Sample / trial required",
+          "notes": "",
+          "color": "amber"
+        }
+      ],
+      "documents": {
+        "main_document_quality_warnings": [
+          "HTTP 200",
+          "Low text extraction / possibly scanned image (needs OCR review)",
+          "Low text extraction / possibly scanned image (needs OCR review)",
+          "No parser available for type: Unknown"
+        ],
+        "linked_documents_found": 15,
+        "linked_documents_processed": 11,
+        "linked_documents_failed": 2,
+        "regional_language_detected": [],
+        "children": [
+          {
+            "name": "Document (Bid Summary Omp)",
+            "url": "https://bidplus.gem.gov.in/bidding/downloadOmppdfile/",
+            "type": "Unknown",
+            "status": "failed_download",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "HTTP 200"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "PRICE BREAKUP - MANDATORY (1784705854.xlsx)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/excel/bid-9644400/1784705854.xlsx",
+            "type": "Excel",
+            "status": "processed",
+            "char_count": 1629,
+            "page_count": 1,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "// /Additional Qualification/Data Required Payment Terms (1784706705.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706705.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 3249,
+            "page_count": 1,
+            "warnings": [],
+            "requirements_found": [
+              "Turnover clause",
+              "Payment terms"
+            ]
+          },
+          {
+            "name": "Scope of Work (1784716242.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784716242.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 1205,
+            "page_count": 5,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "Introduction about the project /services being proposed for procurement using custom bid functionality (1784706721.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706721.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 180580,
+            "page_count": 71,
+            "warnings": [],
+            "requirements_found": [
+              "Turnover clause",
+              "Experience / PQC clause",
+              "Payment terms",
+              "Penalty / LD clause",
+              "Mandatory certification",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Quantifiable Specification / Standards of The Service/ BOQ (1784706727.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706727.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 2312,
+            "page_count": 1,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "Instruction To Bidder (1784706827.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706827.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 180580,
+            "page_count": 71,
+            "warnings": [],
+            "requirements_found": [
+              "Turnover clause",
+              "Experience / PQC clause",
+              "Payment terms",
+              "Penalty / LD clause",
+              "Mandatory certification",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Pre Qualification Criteria ( PQC ) etc if any required (1784706823.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706823.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 180580,
+            "page_count": 71,
+            "warnings": [],
+            "requirements_found": [
+              "Turnover clause",
+              "Experience / PQC clause",
+              "Payment terms",
+              "Penalty / LD clause",
+              "Mandatory certification",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Project Experience and Qualifying Criteria Requirement (1784706828.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706828.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 180580,
+            "page_count": 71,
+            "warnings": [],
+            "requirements_found": [
+              "Turnover clause",
+              "Experience / PQC clause",
+              "Payment terms",
+              "Penalty / LD clause",
+              "Mandatory certification",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "Penalties (1784706830.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706830.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 180580,
+            "page_count": 71,
+            "warnings": [],
+            "requirements_found": [
+              "Turnover clause",
+              "Experience / PQC clause",
+              "Payment terms",
+              "Penalty / LD clause",
+              "Mandatory certification",
+              "Scope of work / service activities"
+            ]
+          },
+          {
+            "name": "4 / 7 GEM Availability Report ( GAR) (1784715560.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784715560.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 0,
+            "page_count": 1,
+            "warnings": [
+              "Low text extraction / possibly scanned image (needs OCR review)"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Undertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1784715568.pdf)",
+            "url": "https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784715568.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 0,
+            "page_count": 1,
+            "warnings": [
+              "Low text extraction / possibly scanned image (needs OCR review)"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Other)",
+            "url": "https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Jul/GEM_2026_B_7819944/CLM0014/NIT2627104_c30b2550-69f3-44c0-85cd1784716393353_Kar.Nilanjan.pdf",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          }
+        ]
+      },
+      "technical_spec_links": "Document (Bid Summary Omp) : https://bidplus.gem.gov.in/bidding/downloadOmppdfile/;\nPRICE BREAKUP - MANDATORY (1784705854.xlsx) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/excel/bid-9644400/1784705854.xlsx;\n// /Additional Qualification/Data Required Payment Terms (1784706705.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706705.pdf;\nScope of Work (1784716242.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784716242.pdf;\nIntroduction about the project /services being proposed for procurement using custom bid functionality (1784706721.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706721.pdf;\nQuantifiable Specification / Standards of The Service/ BOQ (1784706727.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706727.pdf;\nInstruction To Bidder (1784706827.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706827.pdf;\nPre Qualification Criteria ( PQC ) etc if any required (1784706823.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706823.pdf;\nProject Experience and Qualifying Criteria Requirement (1784706828.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706828.pdf;\nPenalties (1784706830.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784706830.pdf;\n4 / 7 GEM Availability Report ( GAR) (1784715560.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784715560.pdf;\nUndertaking of Competent Authority is mandatory to create Custom Bid for Services. Please download standard format document and upload (1784715568.pdf) : https://bidplus.gem.gov.in/resources/upload_nas/JulQ326/bidding/biddoc/bid-9644400/1784715568.pdf;\nDocument (Other) : https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Jul/GEM_2026_B_7819944/CLM0014/NIT2627104_c30b2550-69f3-44c0-85cd1784716393353_Kar.Nilanjan.pdf;\nDocument (General Terms Conditions) : https://admin.gem.gov.in/apis/v1/gtc/pdfByDate/?date=20260722;\nDocument (Sla Bid Document) : https://bidplus.gem.gov.in/bidding/bid/bidsla/93014451360000",
+      "human_review": {
+        "resolved": false,
+        "final_status": null,
+        "reviewer_comment": "",
+        "override_reason": ""
+      }
+    },
+    {
+      "bid_number": "GEM/2026/B/7394004",
+      "bid_doc_url": "https://bidplus.gem.gov.in/showbidDocument/9165872",
+      "item_category": "N Size Wireline Right Hand Indigenous Drill Rod",
+      "ministry": "Ministry Of Coal",
+      "organisation": "Central Mine Planning And Design Institute Limited",
+      "department": "Coal India Limited",
+      "govt_classification": "PSU",
+      "business_section": "Unclassified",
+      "bid_value_inr": 49560000.0,
+      "emd_amount_inr": 991000.0,
+      "evaluation_method": "Total value wise evaluation",
+      "is_qcbs_or_special": false,
+      "end_date_raw": "29-04-2026 16:00:00",
+      "status": "Disqualified",
+      "status_reason": "Score 31.2% classified as Disqualified against configured thresholds",
+      "eligibility_score": 31.2,
+      "ai_confidence": 63.0,
+      "human_review_required": false,
+      "human_review_reasons": [],
+      "scoring": {
+        "eligibility_score": 31.2,
+        "ai_confidence": 63.0,
+        "contributing_factors": [
+          "Required Service Activities passed (+4)"
+        ],
+        "reducing_factors": [
+          "Company Turnover needs review (uncertain, +5 only)",
+          "Years of Past Experience needs review (uncertain, +6 only)",
+          "Technical Capability / Product Match needs review (uncertain, +6 only)",
+          "Required Supporting Documents needs review (uncertain, +2 only)",
+          "Additional ATC / Linked-Document Conditions needs review (uncertain, +1 only)"
+        ],
+        "blocking_conditions_failed": [],
+        "has_blocking_failure": false,
+        "classification_basis": "weighted_requirement_score"
+      },
+      "requirements": [
+        {
+          "id": "turnover",
+          "name": "Company Turnover",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No turnover clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "product_turnover",
+          "name": "Product/OEM-Specific Turnover",
+          "category": "Financial",
+          "required_value": "Not required",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No product-specific turnover clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "experience",
+          "name": "Years of Past Experience",
+          "category": "Experience",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No experience clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "technical_specification",
+          "name": "Technical Capability / Product Match",
+          "category": "Technical",
+          "required_value": "technical specifications. The bidder seeking Relaxation from Experience Criteria, shall upload the supporting documents to prove his eligibility for Relaxation....",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document / Technical Spec",
+          "evidence_snippet": "technical specifications. The bidder seeking Relaxation from Experience Criteria, shall upload the supporting documents to prove his eligibility for Relaxation....",
+          "notes": "Product/service equivalence could not be confidently matched to ProcMart catalog",
+          "color": "amber"
+        },
+        {
+          "id": "net_worth",
+          "name": "Net Worth",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No net worth clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_count",
+          "name": "Number of Completed Orders",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No explicit order-count clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_value",
+          "name": "Order Quantity / Project Value (Past Performance)",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "service_activities",
+          "name": "Required Service Activities",
+          "category": "Scope",
+          "required_value": "Supply, Installation, Testing, Commissioning, After-sales / Warranty Service",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document / Scope of Work",
+          "evidence_snippet": "Supply, Installation, Testing, Commissioning, After-sales / Warranty Service",
+          "notes": "",
+          "color": "green"
+        },
+        {
+          "id": "mandatory_documents",
+          "name": "Required Supporting Documents",
+          "category": "Compliance",
+          "required_value": "6 document(s): Experience Criteria,OEM Authorization Certificate,Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC),Additional Doc 3 (Requested in ATC) *In...",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "Experience Criteria,OEM Authorization Certificate,Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC),Additional Doc 3 (Requested in ATC) *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting documents to prove his eligibility for exemption must be uploaded for evaluation by the buyer",
+          "notes": "Confirm each listed document is on file before submission",
+          "color": "amber"
+        },
+        {
+          "id": "atc_conditions",
+          "name": "Additional ATC / Linked-Document Conditions",
+          "category": "Compliance",
+          "required_value": "OEM authorization mandatory, Local content / Make-in-India, Land-border restriction, Integrity Pact mandatory, Sample / trial required, Inspection required",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "ATC / Buyer Added Bid Specific Terms",
+          "evidence_snippet": "OEM authorization mandatory, Local content / Make-in-India, Land-border restriction, Integrity Pact mandatory, Sample / trial required, Inspection required",
+          "notes": "",
+          "color": "amber"
+        }
+      ],
+      "documents": {
+        "main_document_quality_warnings": [
+          "HTTP 200",
+          "No parser available for type: Unknown",
+          "No parser available for type: Unknown"
+        ],
+        "linked_documents_found": 5,
+        "linked_documents_processed": 1,
+        "linked_documents_failed": 3,
+        "regional_language_detected": [],
+        "children": [
+          {
+            "name": "Document (Bid Summary Omp)",
+            "url": "https://bidplus.gem.gov.in/bidding/downloadOmppdfile/",
+            "type": "Unknown",
+            "status": "failed_download",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "HTTP 200"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Technical Specification)",
+            "url": "https://mkp.gem.gov.in/catalog_data/catalog_support_document/buyer_documents/821730/54/78/703/CatalogAttrs/SpecificationDocument/2026/3/26/specs_2026-03-26-13-21-40_81d3ab354fc5e812cc5704d2682df5e3.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 3185,
+            "page_count": 1,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Other)",
+            "url": "https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Mar/GEM_2026_B_7394004/CL10360/IP_522b04e6-b44a-401a-81a91774853900368_ambrish.chaubey.pdf",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Other)",
+            "url": "https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Mar/GEM_2026_B_7394004/CLM0010/ANNEX_1234_190e0685-fbd3-4a16-89101774854135818_ambrish.chaubey.pdf",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          }
+        ]
+      },
+      "technical_spec_links": "Document (Bid Summary Omp) : https://bidplus.gem.gov.in/bidding/downloadOmppdfile/;\nDocument (Technical Specification) : https://mkp.gem.gov.in/catalog_data/catalog_support_document/buyer_documents/821730/54/78/703/CatalogAttrs/SpecificationDocument/2026/3/26/specs_2026-03-26-13-21-40_81d3ab354fc5e812cc5704d2682df5e3.pdf;\nDocument (Other) : https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Mar/GEM_2026_B_7394004/CL10360/IP_522b04e6-b44a-401a-81a91774853900368_ambrish.chaubey.pdf;\nDocument (Other) : https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Mar/GEM_2026_B_7394004/CLM0010/ANNEX_1234_190e0685-fbd3-4a16-89101774854135818_ambrish.chaubey.pdf;\nDocument (General Terms Conditions) : https://admin.gem.gov.in/apis/v1/gtc/pdfByDate/?date=20260408",
+      "human_review": {
+        "resolved": false,
+        "final_status": null,
+        "reviewer_comment": "",
+        "override_reason": ""
+      }
+    },
+    {
+      "bid_number": "GEM/2026/B/7396960",
+      "bid_doc_url": "https://bidplus.gem.gov.in/showbidDocument/9169318",
+      "item_category": "1.1 KV Grade, 5 core x 35 sq. mm, FT7 type trailing cable , 1.1 KV, 5 core, 25sqmm, Type FT-7 Flexible Trailing Cable ISI Marked , 1.1 KV, 5 core, 16sqmm, Type FT-7 Flexible Trailing Cable , 1.1 KV, 5 core, 6sqmm, Type FTD-3 Flexible Trailing Cable ISI Marked",
+      "ministry": "Ministry Of Coal",
+      "organisation": "Eastern Coalfields Limited",
+      "department": "Coal India Limited",
+      "govt_classification": "PSU",
+      "business_section": "Unclassified",
+      "bid_value_inr": 83483520.0,
+      "emd_amount_inr": 60000.0,
+      "evaluation_method": "Item wise evaluation",
+      "is_qcbs_or_special": false,
+      "end_date_raw": "25-04-2026 12:00:00",
+      "status": "Disqualified",
+      "status_reason": "Score 31.2% classified as Disqualified against configured thresholds",
+      "eligibility_score": 31.2,
+      "ai_confidence": 63.0,
+      "human_review_required": false,
+      "human_review_reasons": [],
+      "scoring": {
+        "eligibility_score": 31.2,
+        "ai_confidence": 63.0,
+        "contributing_factors": [
+          "Required Service Activities passed (+4)"
+        ],
+        "reducing_factors": [
+          "Company Turnover needs review (uncertain, +5 only)",
+          "Years of Past Experience needs review (uncertain, +6 only)",
+          "Technical Capability / Product Match needs review (uncertain, +6 only)",
+          "Required Supporting Documents needs review (uncertain, +2 only)",
+          "Additional ATC / Linked-Document Conditions needs review (uncertain, +1 only)"
+        ],
+        "blocking_conditions_failed": [],
+        "has_blocking_failure": false,
+        "classification_basis": "weighted_requirement_score"
+      },
+      "requirements": [
+        {
+          "id": "turnover",
+          "name": "Company Turnover",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No turnover clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "product_turnover",
+          "name": "Product/OEM-Specific Turnover",
+          "category": "Financial",
+          "required_value": "Not required",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No product-specific turnover clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "experience",
+          "name": "Years of Past Experience",
+          "category": "Experience",
+          "required_value": "Not specified",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "No experience clause detected",
+          "notes": "",
+          "color": "amber"
+        },
+        {
+          "id": "technical_specification",
+          "name": "Technical Capability / Product Match",
+          "category": "Technical",
+          "required_value": "technical specifications. The bidder seeking Relaxation from Experience Criteria, shall upload the supporting documents to prove his eligibility for Relaxation....",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document / Technical Spec",
+          "evidence_snippet": "technical specifications. The bidder seeking Relaxation from Experience Criteria, shall upload the supporting documents to prove his eligibility for Relaxation....",
+          "notes": "Product/service equivalence could not be confidently matched to ProcMart catalog",
+          "color": "amber"
+        },
+        {
+          "id": "net_worth",
+          "name": "Net Worth",
+          "category": "Financial",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No net worth clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_count",
+          "name": "Number of Completed Orders",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "ATC",
+          "evidence_snippet": "No explicit order-count clause found",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "order_value",
+          "name": "Order Quantity / Project Value (Past Performance)",
+          "category": "Past Performance",
+          "required_value": "Not specified",
+          "status": "Not found",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "",
+          "notes": "",
+          "color": "grey"
+        },
+        {
+          "id": "service_activities",
+          "name": "Required Service Activities",
+          "category": "Scope",
+          "required_value": "Supply, Testing",
+          "status": "Passed",
+          "mandatory": false,
+          "evidence_doc": "Main Bid Document / Scope of Work",
+          "evidence_snippet": "Supply, Testing",
+          "notes": "",
+          "color": "green"
+        },
+        {
+          "id": "mandatory_documents",
+          "name": "Required Supporting Documents",
+          "category": "Compliance",
+          "required_value": "7 document(s): Experience Criteria,Certificate (Requested in ATC),OEM Authorization Certificate,Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC),Compliance of BoQ specification...",
+          "status": "Needs review",
+          "mandatory": true,
+          "evidence_doc": "Main Bid Document",
+          "evidence_snippet": "Experience Criteria,Certificate (Requested in ATC),OEM Authorization Certificate,Additional Doc 1 (Requested in ATC),Additional Doc 2 (Requested in ATC),Compliance of BoQ specification and supporting document *In case any bidder is seeking exemption from Experience / Turnover Criteria, the supporting documents to prove his eligibility for exemption must be uploaded for evaluation by the buyer",
+          "notes": "Confirm each listed document is on file before submission",
+          "color": "amber"
+        },
+        {
+          "id": "atc_conditions",
+          "name": "Additional ATC / Linked-Document Conditions",
+          "category": "Compliance",
+          "required_value": "OEM authorization mandatory, Local content / Make-in-India, Land-border restriction, Integrity Pact mandatory, Sample / trial required, Inspection required",
+          "status": "Needs review",
+          "mandatory": false,
+          "evidence_doc": "ATC / Buyer Added Bid Specific Terms",
+          "evidence_snippet": "OEM authorization mandatory, Local content / Make-in-India, Land-border restriction, Integrity Pact mandatory, Sample / trial required, Inspection required",
+          "notes": "",
+          "color": "amber"
+        }
+      ],
+      "documents": {
+        "main_document_quality_warnings": [
+          "HTTP 200",
+          "No parser available for type: Unknown",
+          "No parser available for type: Unknown"
+        ],
+        "linked_documents_found": 9,
+        "linked_documents_processed": 5,
+        "linked_documents_failed": 3,
+        "regional_language_detected": [],
+        "children": [
+          {
+            "name": "Document (Bid Summary Omp)",
+            "url": "https://bidplus.gem.gov.in/bidding/downloadOmppdfile/",
+            "type": "Unknown",
+            "status": "failed_download",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "HTTP 200"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Technical Specification)",
+            "url": "https://mkp.gem.gov.in/catalog_data/catalog_support_document/buyer_documents/18400167/54/78/703/CatalogAttrs/SpecificationDocument/2026/3/27/trailing_cable-35_sq_mm_2026-03-27-13-39-13_7f4098d108a48f529fabb03d0c823ebe.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 4234,
+            "page_count": 3,
+            "warnings": [],
+            "requirements_found": [
+              "Mandatory certification"
+            ]
+          },
+          {
+            "name": "Document (Technical Specification)",
+            "url": "https://mkp.gem.gov.in/catalog_data/catalog_support_document/buyer_documents/18400167/54/78/703/CatalogAttrs/SpecificationDocument/2026/3/27/trailing_cable-25_sq_mm_2026-03-27-13-43-18_3ab504d2931eea9ed2ba80387b31b198.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 4501,
+            "page_count": 3,
+            "warnings": [],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Technical Specification)",
+            "url": "https://mkp.gem.gov.in/catalog_data/catalog_support_document/buyer_documents/18400167/54/78/703/CatalogAttrs/SpecificationDocument/2026/3/27/trailing_cable-16_sq_mm_2026-03-27-13-46-24_2181a42d0a7438eb0f7e1ca4270e0fef.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 4467,
+            "page_count": 3,
+            "warnings": [],
+            "requirements_found": [
+              "Experience / PQC clause",
+              "Mandatory certification"
+            ]
+          },
+          {
+            "name": "Document (Technical Specification)",
+            "url": "https://mkp.gem.gov.in/catalog_data/catalog_support_document/buyer_documents/18400167/54/78/703/CatalogAttrs/SpecificationDocument/2026/3/27/trailing_cable-06_sq_mm_2026-03-27-13-48-50_7dc76e4d2c91acd090581bbe9941da1a.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 4503,
+            "page_count": 3,
+            "warnings": [],
+            "requirements_found": [
+              "Experience / PQC clause",
+              "Mandatory certification"
+            ]
+          },
+          {
+            "name": "Document (Buyer Additional Doc)",
+            "url": "https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Mar/GEM_2026_B_7396960/CL10360/IP_65891fbc-3535-4aab-b1af1774678627119_eclhqmmbuyer4.pdf",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Atc Pqc Document)",
+            "url": "https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Mar/GEM_2026_B_7396960/CLM0010/FATC_fe0d085b-767e-4c20-87cb1774678605897_eclhqmmbuyer4.pdf",
+            "type": "Unknown",
+            "status": "unsupported_type",
+            "char_count": 0,
+            "page_count": 0,
+            "warnings": [
+              "No parser available for type: Unknown"
+            ],
+            "requirements_found": []
+          },
+          {
+            "name": "Document (Other)",
+            "url": "https://assets-bg.gem.gov.in/resources/upload/shared_doc/list-of-categories-where-trials-are-allowed_1712126171.pdf",
+            "type": "PDF",
+            "status": "processed",
+            "char_count": 2373,
+            "page_count": 2,
+            "warnings": [],
+            "requirements_found": []
+          }
+        ]
+      },
+      "technical_spec_links": "Document (Bid Summary Omp) : https://bidplus.gem.gov.in/bidding/downloadOmppdfile/;\nDocument (Technical Specification) : https://mkp.gem.gov.in/catalog_data/catalog_support_document/buyer_documents/18400167/54/78/703/CatalogAttrs/SpecificationDocument/2026/3/27/trailing_cable-35_sq_mm_2026-03-27-13-39-13_7f4098d108a48f529fabb03d0c823ebe.pdf;\nDocument (Technical Specification) : https://mkp.gem.gov.in/catalog_data/catalog_support_document/buyer_documents/18400167/54/78/703/CatalogAttrs/SpecificationDocument/2026/3/27/trailing_cable-25_sq_mm_2026-03-27-13-43-18_3ab504d2931eea9ed2ba80387b31b198.pdf;\nDocument (Technical Specification) : https://mkp.gem.gov.in/catalog_data/catalog_support_document/buyer_documents/18400167/54/78/703/CatalogAttrs/SpecificationDocument/2026/3/27/trailing_cable-16_sq_mm_2026-03-27-13-46-24_2181a42d0a7438eb0f7e1ca4270e0fef.pdf;\nDocument (Technical Specification) : https://mkp.gem.gov.in/catalog_data/catalog_support_document/buyer_documents/18400167/54/78/703/CatalogAttrs/SpecificationDocument/2026/3/27/trailing_cable-06_sq_mm_2026-03-27-13-48-50_7dc76e4d2c91acd090581bbe9941da1a.pdf;\nDocument (Buyer Additional Doc) : https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Mar/GEM_2026_B_7396960/CL10360/IP_65891fbc-3535-4aab-b1af1774678627119_eclhqmmbuyer4.pdf;\nDocument (Atc Pqc Document) : https://fulfilment.gem.gov.in/contract/slafds?fileDownloadPath=SLA_UPLOAD_PATH/2026/Mar/GEM_2026_B_7396960/CLM0010/FATC_fe0d085b-767e-4c20-87cb1774678605897_eclhqmmbuyer4.pdf;\nDocument (Other) : https://assets-bg.gem.gov.in/resources/upload/shared_doc/list-of-categories-where-trials-are-allowed_1712126171.pdf;\nDocument (General Terms Conditions) : https://admin.gem.gov.in/apis/v1/gtc/pdfByDate/?date=20260404",
+      "human_review": {
+        "resolved": false,
+        "final_status": null,
+        "reviewer_comment": "",
+        "override_reason": ""
+      }
+    }
+  ]
+}
